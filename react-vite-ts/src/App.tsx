@@ -47,7 +47,10 @@ function App() {
 				<h3 className="title">A normal conversation</h3>
 				<DiscordMessages>
 					<DiscordMessage author="Alyx Vargas"> Hey guys, I'm new here! Glad to be able to join you all! </DiscordMessage>
-					<DiscordMessage author="Fenton Smart" avatar="/avafive.png">
+					<DiscordMessage
+						author="Fenton Smart"
+						avatar="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/avafive.png"
+					>
 						{' '}
 						Hi, I'm new here too!{' '}
 					</DiscordMessage>
@@ -65,7 +68,10 @@ function App() {
 						Thank you
 						<DiscordMention highlight>Maximillian Osborn</DiscordMention>!
 					</DiscordMessage>
-					<DiscordMessage author="Kayla Feeney" avatar="/avafour.png">
+					<DiscordMessage
+						author="Kayla Feeney"
+						avatar="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/avafour.png"
+					>
 						I'm doing well, <DiscordMention>Willard Walton</DiscordMention>. What about yourself?
 					</DiscordMessage>
 					<DiscordMessage profile="willard"> s!8ball How am I doing today? </DiscordMessage>
@@ -77,13 +83,18 @@ function App() {
 					<DiscordMessage profile="favna">
 						Hey these are some custom emojis:
 						<DiscordCustomEmoji name="blobparty" url="/blobparty.gif" />
-						<DiscordCustomEmoji name="skyra" url="/skyra.png" />
+						<DiscordCustomEmoji name="skyra" url="https://github.com/NM-EEA-Y.png" />
 						<DiscordEmbed slot="embeds" color="#0F52BA" embedTitle="diamond Emojis in the embed title">
 							<DiscordEmbedDescription slot="description">Custom emojis in the embed description:</DiscordEmbedDescription>
-							<DiscordCustomEmoji name="pikawow" url="/pikawow.png" embedEmoji />
+							<DiscordCustomEmoji
+								name="pikawow"
+								url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/pikawow.png"
+								embedEmoji
+							/>
 							<DiscordEmbedFields slot="fields">
 								<DiscordEmbedField fieldTitle="dragonite Custom emojis in the field title">
-									Custom emojis in the field content <DiscordCustomEmoji name="sapphire" url="/skyra.png" embedEmoji />
+									Custom emojis in the field content{' '}
+									<DiscordCustomEmoji name="sapphire" url="https://github.com/NM-EEA-Y.png" embedEmoji />
 								</DiscordEmbedField>
 							</DiscordEmbedFields>
 						</DiscordEmbed>
@@ -175,7 +186,7 @@ function App() {
 						<DiscordAttachments slot="attachments">
 							<DiscordInvite
 								name="discord.js - Imagine a bot"
-								icon="/discordjs.png"
+								icon="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/discordjs.png"
 								url="https://discord.gg/djs"
 								online={16417}
 								members={87147}
@@ -183,7 +194,7 @@ function App() {
 							></DiscordInvite>
 							<DiscordInvite
 								name="The Coding Den"
-								icon="/tcd.png"
+								icon="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/tcd.png"
 								url="https://discord.gg/code"
 								online={18456}
 								members={73548}
@@ -204,7 +215,13 @@ function App() {
 				<DiscordMessages>
 					<DiscordMessage profile="Alyx Vargas">
 						That's a very small logo image!
-						<DiscordAttachment slot="attachments" url="/stencil.png" height={100} width={100} alt="stencil-logo" />
+						<DiscordAttachment
+							slot="attachments"
+							url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
+							height={100}
+							width={100}
+							alt="stencil-logo"
+						/>
 					</DiscordMessage>
 				</DiscordMessages>
 
@@ -212,7 +229,13 @@ function App() {
 				<DiscordMessages>
 					<DiscordMessage profile="favna">
 						Hey guys, check out this awesome, cute, and totally amazing dragon!
-						<DiscordAttachment slot="attachments" url="/dragonite.png" height={512} width={512} alt="dragonite" />
+						<DiscordAttachment
+							slot="attachments"
+							url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
+							height={512}
+							width={512}
+							alt="dragonite"
+						/>
 					</DiscordMessage>
 				</DiscordMessages>
 
@@ -285,7 +308,13 @@ function App() {
 						<DiscordReactions slot="reactions">
 							<DiscordReaction name="👍" emoji="/thumbsup.svg" count={1}></DiscordReaction>
 							<DiscordReaction name="👀" emoji="/eyes.svg" count={2} reacted></DiscordReaction>
-							<DiscordReaction interactive name="dragonite" emoji="/dragonite.png" count={10} reacted></DiscordReaction>
+							<DiscordReaction
+								interactive
+								name="dragonite"
+								emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
+								count={10}
+								reacted
+							></DiscordReaction>
 						</DiscordReactions>
 					</DiscordMessage>
 				</DiscordMessages>
@@ -395,13 +424,13 @@ function App() {
 					<DiscordMessage profile="skyra">
 						<DiscordEmbed
 							slot="embeds"
-							authorImage="/sapphire.png"
+							authorImage="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
 							authorName="Sapphire Developers"
 							authorUrl="https://sapphirejs.dev"
 							color="#0F52BA"
 							embedTitle="Sapphire"
-							image="/sapphire.png"
-							thumbnail="/sapphire.png"
+							image="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
+							thumbnail="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
 							url="https://sapphirejs.dev"
 						>
 							<DiscordEmbedDescription slot="description">
@@ -463,7 +492,11 @@ function App() {
 									</ul>
 								</DiscordEmbedField>
 							</DiscordEmbedFields>
-							<DiscordEmbedFooter slot="footer" footerImage="/sapphire.png" timestamp="03/20/2021">
+							<DiscordEmbedFooter
+								slot="footer"
+								footerImage="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
+								timestamp="03/20/2021"
+							>
 								Open source libraries to aid in the creation of Discord bots
 							</DiscordEmbedFooter>
 						</DiscordEmbed>
@@ -556,7 +589,10 @@ function App() {
 				<h3 className="title">Inline fields with a thumbnail</h3>
 				<DiscordMessages>
 					<DiscordMessage profile="skyra">
-						<DiscordEmbed slot="embeds" thumbnail="/sapphire.png">
+						<DiscordEmbed
+							slot="embeds"
+							thumbnail="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
+						>
 							<DiscordEmbedFields slot="fields">
 								<DiscordEmbedField fieldTitle="Inline field title" inline inlineIndex={1}>
 									{' '}

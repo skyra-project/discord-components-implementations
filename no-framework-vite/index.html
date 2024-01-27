@@ -28,17 +28,17 @@
 				profiles: {
 					maximillian: {
 						author: 'Maximillian Osborn',
-						avatar: `/avaone.png`,
+						avatar: `https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/avaone.png`,
 						roleColor: '#f9d61b'
 					},
 					willard: {
 						author: 'Willard Walton',
-						avatar: `/avatwo.png`,
+						avatar: `https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/avatwo.png`,
 						roleColor: '#ffb12f'
 					},
 					skyra: {
 						author: 'Skyra',
-						avatar: '/skyra.png',
+						avatar: 'https://github.com/NM-EEA-Y.png',
 						roleColor: '#1e88e5',
 						bot: true,
 						verified: true
@@ -47,12 +47,12 @@
 						author: 'Favna',
 						avatar: 'https://github.com/favna.png',
 						roleColor: '#a155ab',
-						roleIcon: '/booster.png',
+						roleIcon: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/booster.png',
 						roleName: 'Booster'
 					},
 					discordjs: {
 						author: 'Discord.js Official #announcements',
-						avatar: '/discordjs.png',
+						avatar: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/discordjs.png',
 						roleColor: '#ffffff',
 						server: true
 					}
@@ -60,19 +60,19 @@
 				emojis: {
 					diamond: {
 						name: 'diamond',
-						url: '/diamond.png'
+						url: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/diamond.png'
 					},
 					aichansmile: {
 						name: 'aichansmile',
-						url: '/aichansmile.png'
+						url: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/aichansmile.png'
 					},
 					dragonite: {
 						name: 'dragonite',
-						url: '/dragonite.png'
+						url: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png'
 					},
 					sapphire: {
 						name: 'sapphire',
-						url: '/sapphire.png'
+						url: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png'
 					}
 				}
 			};
@@ -91,7 +91,12 @@
 				<h3 class="title">A normal conversation</h3>
 				<discord-messages>
 					<discord-message author="Alyx Vargas"> Hey guys, I'm new here! Glad to be able to join you all! </discord-message>
-					<discord-message author="Fenton Smart" avatar="/avafive.png"> Hi, I'm new here too! </discord-message>
+					<discord-message
+						author="Fenton Smart"
+						avatar="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/avafive.png"
+					>
+						Hi, I'm new here too!
+					</discord-message>
 					<discord-message profile="maximillian">
 						Hey, <discord-mention>Alyx Vargas</discord-mention> and <discord-mention>Dawn</discord-mention>. Welcome to our server!<br />Be
 						sure to read through the <discord-mention type="channel">rules</discord-mention>. You can ping
@@ -103,7 +108,10 @@
 						Thank you
 						<discord-mention highlight>Maximillian Osborn</discord-mention>!
 					</discord-message>
-					<discord-message author="Kayla Feeney" avatar="/avafour.png">
+					<discord-message
+						author="Kayla Feeney"
+						avatar="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/avafour.png"
+					>
 						I'm doing well, <discord-mention>Willard Walton</discord-mention>. What about yourself?
 					</discord-message>
 					<discord-message profile="willard"> s!8ball How am I doing today? </discord-message>
@@ -200,11 +208,15 @@
 					<discord-message profile="favna">
 						Hey these are some custom emojis:
 						<discord-custom-emoji name="blobparty" url="/blobparty.gif"></discord-custom-emoji>
-						<discord-custom-emoji name="skyra" url="/skyra.png"></discord-custom-emoji>
+						<discord-custom-emoji name="skyra" url="https://github.com/NM-EEA-Y.png"></discord-custom-emoji>
 						<discord-embed slot="embeds" color="#0F52BA" embed-title="diamond Emojis in the embed title">
 							<discord-embed-description slot="description">
 								Custom emojis in the embed description:
-								<discord-custom-emoji name="pikawow" url="/pikawow.png" embed-emoji></discord-custom-emoji>
+								<discord-custom-emoji
+									name="pikawow"
+									url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/pikawow.png"
+									embed-emoji
+								></discord-custom-emoji>
 							</discord-embed-description>
 							<discord-embed-fields slot="fields">
 								<discord-embed-field field-title="dragonite Custom emojis in the field title">
@@ -223,7 +235,7 @@
 						<discord-attachments slot="attachments">
 							<discord-invite
 								name="discord.js - Imagine a bot"
-								icon="/discordjs.png"
+								icon="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/discordjs.png"
 								url="https://discord.gg/djs"
 								online="16417"
 								members="87147"
@@ -231,7 +243,7 @@
 							></discord-invite>
 							<discord-invite
 								name="The Coding Den"
-								icon="/tcd.png"
+								icon="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/tcd.png"
 								url="https://discord.gg/code"
 								online="18456"
 								members="73548"
@@ -251,14 +263,26 @@
 				<discord-messages>
 					<discord-message profile="Alyx Vargas">
 						That's a very small logo image!
-						<discord-attachment slot="attachments" url="/lit.png" height="100" width="100" alt="lit-logo" />
+						<discord-attachment
+							slot="attachments"
+							url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
+							height="100"
+							width="100"
+							alt="lit-logo"
+						/>
 					</discord-message>
 				</discord-messages>
 				<h3 class="title">Image Attachments with large images</h3>
 				<discord-messages>
 					<discord-message profile="favna">
 						Hey guys, check out this awesome, cute, and totally amazing dragon!
-						<discord-attachment slot="attachments" url="/dragonite.png" height="512" width="512" alt="dragonite" />
+						<discord-attachment
+							slot="attachments"
+							url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
+							height="512"
+							width="512"
+							alt="dragonite"
+						/>
 					</discord-message>
 				</discord-messages>
 				<h3 class="title">System Messages</h3>
@@ -313,7 +337,13 @@
 						<discord-reactions slot="reactions">
 							<discord-reaction name="👍" emoji="/thumbsup.svg" count="1"></discord-reaction>
 							<discord-reaction name="👀" emoji="/eyes.svg" count="2" reacted></discord-reaction>
-							<discord-reaction interactive="true" name="dragonite" emoji="/dragonite.png" count="10" reacted></discord-reaction>
+							<discord-reaction
+								interactive="true"
+								name="dragonite"
+								emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
+								count="10"
+								reacted
+							></discord-reaction>
 						</discord-reactions>
 					</discord-message>
 				</discord-messages>
@@ -392,13 +422,13 @@
 					<discord-message profile="skyra">
 						<discord-embed
 							slot="embeds"
-							author-image="/sapphire.png"
+							author-image="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
 							author-name="Sapphire Developers"
 							author-url="https://sapphirejs.dev"
 							color="#0F52BA"
 							embed-title="Sapphire"
-							image="/sapphire.png"
-							thumbnail="/sapphire.png"
+							image="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
+							thumbnail="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
 							url="https://sapphirejs.dev"
 						>
 							<discord-embed-description slot="description">
@@ -447,7 +477,11 @@
 									</ul>
 								</discord-embed-field>
 							</discord-embed-fields>
-							<discord-embed-footer slot="footer" footer-image="/sapphire.png" .timestamp="${new Date()}">
+							<discord-embed-footer
+								slot="footer"
+								footer-image="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
+								.timestamp="${new Date()}"
+							>
 								Open source libraries to aid in the creation of Discord bots
 							</discord-embed-footer>
 						</discord-embed>
@@ -530,7 +564,10 @@
 				<h3 class="title">Inline fields with a thumbnail</h3>
 				<discord-messages>
 					<discord-message profile="skyra">
-						<discord-embed slot="embeds" thumbnail="/sapphire.png">
+						<discord-embed
+							slot="embeds"
+							thumbnail="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
+						>
 							<discord-embed-fields slot="fields">
 								<discord-embed-field field-title="Inline field title" inline inline-index="1"> Some value here </discord-embed-field>
 								<discord-embed-field field-title="Inline field title" inline inline-index="2"> Some value here </discord-embed-field>
