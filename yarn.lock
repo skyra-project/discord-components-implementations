@@ -3218,6 +3218,7 @@ __metadata:
     "@angular/platform-browser-dynamic": "npm:^17.1.0"
     "@angular/router": "npm:^17.1.0"
     "@skyra/discord-components-core": "npm:^4.0.0-alpha.3"
+    prettier: "npm:^3.2.4"
     rxjs: "npm:~7.8.0"
     tslib: "npm:^2.3.0"
     typescript: "npm:~5.3.2"
