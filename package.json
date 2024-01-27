@@ -1,9 +1,14 @@
 {
-  "name": "discord-components-implementations",
-  "workspaces": [
-    "angular",
-    "no-framework-vite",
-    "react-vite-ts"
-  ],
-  "packageManager": "yarn@4.0.2"
+	"name": "discord-components-implementations",
+	"workspaces": [
+		"angular",
+		"no-framework-vite",
+		"react-vite-ts"
+	],
+	"packageManager": "yarn@4.0.2",
+	"devDependencies": {
+		"@sapphire/prettier-config": "^2.0.0",
+		"prettier": "^3.2.4"
+	},
+	"prettier": "@sapphire/prettier-config"
 }

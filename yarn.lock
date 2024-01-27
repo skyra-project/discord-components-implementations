@@ -2471,6 +2471,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sapphire/prettier-config@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@sapphire/prettier-config@npm:2.0.0"
+  dependencies:
+    prettier: "npm:^3.0.0"
+  checksum: 87aa87f0b47662f1b2b2f3de415ac5db54240f1b1848d068eebdd33d396d08991f5fe9b8fe229640a8392440a3bbd09380f279999f4a66367d5fff1cb91579e2
+  languageName: node
+  linkType: hard
+
 "@schematics/angular@npm:17.1.1":
   version: 17.1.1
   resolution: "@schematics/angular@npm:17.1.1"
@@ -3208,6 +3217,7 @@ __metadata:
     "@angular/platform-browser": "npm:^17.1.0"
     "@angular/platform-browser-dynamic": "npm:^17.1.0"
     "@angular/router": "npm:^17.1.0"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.3"
     rxjs: "npm:~7.8.0"
     tslib: "npm:^2.3.0"
     typescript: "npm:~5.3.2"
@@ -4106,6 +4116,9 @@ __metadata:
 "discord-components-implementations@workspace:.":
   version: 0.0.0-use.local
   resolution: "discord-components-implementations@workspace:."
+  dependencies:
+    "@sapphire/prettier-config": "npm:^2.0.0"
+    prettier: "npm:^3.2.4"
   languageName: unknown
   linkType: soft
 
@@ -6870,6 +6883,15 @@ __metadata:
     picocolors: "npm:^1.0.0"
     source-map-js: "npm:^1.0.2"
   checksum: 16eda83458fcd8a91bece287b5920c7f57164c3ea293e6c80d0ea71ce7843007bcd8592260a5160b9a7f02693e6ac93e2495b02d8c7596d3f3f72c1447e3ba79
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.0.0, prettier@npm:^3.2.4":
+  version: 3.2.4
+  resolution: "prettier@npm:3.2.4"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: 88dfeb78ac6096522c9a5b81f1413d875f568420d9bb6a5e5103527912519b993f2bcdcac311fcff5718d5869671d44e4f85827d3626f3a6ce32b9abc65d88e0
   languageName: node
   linkType: hard
 
