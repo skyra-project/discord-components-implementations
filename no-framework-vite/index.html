@@ -3,26 +3,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-		<title>Discord Components Core</title>
-		<style>
-			body {
-				color: #eee;
-				background-color: #2a2a2a;
-				font-family: Arial, Helvetica, sans-serif;
-			}
+		<title>No Framework + Vite + TS</title>
+		<link rel="stylesheet" href="./index.css" />
 
-			.logo {
-				display: inline-block;
-				font-weight: bold;
-				font-size: 2em;
-				margin: 0;
-			}
-
-			.title {
-				border-bottom: 1px solid #4a4a4a;
-				padding-bottom: 0.25em;
-			}
-		</style>
 		<script>
 			window.$discordMessage = {
 				profiles: {
@@ -104,9 +87,9 @@
 						if you need help.
 					</discord-message>
 					<discord-message profile="willard">Hello everyone! How's it going?</discord-message>
-					<discord-message author="Alyx Vargas">
+					<discord-message author="Alyx Vargas" highlight>
 						Thank you
-						<discord-mention highlight>Maximillian Osborn</discord-mention>!
+						<discord-mention>Maximillian Osborn</discord-mention>!
 					</discord-message>
 					<discord-message
 						author="Kayla Feeney"
@@ -252,7 +235,7 @@
 							<discord-invite
 								name="Skyra Lounge"
 								url="https://join.skyra.pw"
-								icon="/skyralounge.gif"
+								icon="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/skyralounge.gif"
 								online="176"
 								members="738"
 							></discord-invite>
@@ -503,7 +486,7 @@
 							<discord-embed-footer
 								slot="footer"
 								footer-image="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
-								.timestamp="${new Date()}"
+								timestamp="28/01/2024"
 							>
 								Open source libraries to aid in the creation of Discord bots
 							</discord-embed-footer>
@@ -512,7 +495,7 @@
 				</discord-messages>
 				<h3 class="title">Server crosspost messages</h3>
 				<discord-messages>
-					<discord-message profile="discordjs" timestamp="12/06/2021">
+					<discord-message profile="discordjs" timestamp="28/01/2024">
 						Hey peeps!
 						<br />
 						<br />
