@@ -9,13 +9,7 @@
 	"packageManager": "yarn@4.0.2",
 	"devDependencies": {
 		"@sapphire/prettier-config": "^2.0.0",
-		"@skyra/discord-components-core": "^4.0.0-alpha.3",
-		"@skyra/discord-components-react": "^4.0.0-alpha.3",
 		"prettier": "^3.2.4"
-	},
-	"resolutions": {
-		"@skyra/discord-components-core": "portal:/Users/favna/workspace/skyraproject/discord-components/packages/core",
-		"@skyra/discord-components-react": "portal:/Users/favna/workspace/skyraproject/discord-components/packages/react"
 	},
 	"prettier": "@sapphire/prettier-config"
 }

@@ -2547,28 +2547,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@skyra/discord-components-core@portal:/Users/favna/workspace/skyraproject/discord-components/packages/core::locator=discord-components-implementations%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "@skyra/discord-components-core@portal:/Users/favna/workspace/skyraproject/discord-components/packages/core::locator=discord-components-implementations%40workspace%3A."
+"@skyra/discord-components-core@npm:^4.0.0-alpha.4":
+  version: 4.0.0-alpha.4
+  resolution: "@skyra/discord-components-core@npm:4.0.0-alpha.4"
   dependencies:
     "@lit/context": "npm:^1.1.0"
     "@open-wc/lit-helpers": "npm:^0.6.0"
     lit: "npm:^3.1.1"
+  checksum: 68470a25498c3e139dd353984d1a8ac87c52094a0138439a836ecea33e912806366e1f1d8a566c8645e2fd888c243c470af3ad808ef6cb35dfe4acad0e221c79
   languageName: node
-  linkType: soft
+  linkType: hard
 
-"@skyra/discord-components-react@portal:/Users/favna/workspace/skyraproject/discord-components/packages/react::locator=discord-components-implementations%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "@skyra/discord-components-react@portal:/Users/favna/workspace/skyraproject/discord-components/packages/react::locator=discord-components-implementations%40workspace%3A."
+"@skyra/discord-components-react@npm:^4.0.0-alpha.4":
+  version: 4.0.0-alpha.4
+  resolution: "@skyra/discord-components-react@npm:4.0.0-alpha.4"
   dependencies:
     "@lit/react": "npm:^1.0.2"
-    "@skyra/discord-components-core": "workspace:^"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.4"
     react: "npm:^18.2.0"
   peerDependencies:
     react: 16.8.x || 17.x || 18.x
     react-dom: 16.8.x || 17.x || 18.x
+  checksum: 066ef3e39f2f756b315c365714326a5bb172fcdd2e6ac67fdeab9a61ccad7b778602178b6e68c05108d22c87d530513e9d9d003a1618b7ffb287b593c8776e0e
   languageName: node
-  linkType: soft
+  linkType: hard
 
 "@tufjs/canonical-json@npm:2.0.0":
   version: 2.0.0
@@ -3215,7 +3217,7 @@ __metadata:
     "@angular/platform-browser": "npm:^17.1.0"
     "@angular/platform-browser-dynamic": "npm:^17.1.0"
     "@angular/router": "npm:^17.1.0"
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.3"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.4"
     prettier: "npm:^3.2.4"
     rxjs: "npm:~7.8.0"
     tslib: "npm:^2.3.0"
@@ -4117,8 +4119,6 @@ __metadata:
   resolution: "discord-components-implementations@workspace:."
   dependencies:
     "@sapphire/prettier-config": "npm:^2.0.0"
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.3"
-    "@skyra/discord-components-react": "npm:^4.0.0-alpha.3"
     prettier: "npm:^3.2.4"
   languageName: unknown
   linkType: soft
@@ -6259,7 +6259,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "no-framework-vite@workspace:templates/no-framework-vite"
   dependencies:
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.3"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.4"
     typescript: "npm:^5.3.3"
     vite: "npm:^5.0.12"
   languageName: unknown
@@ -7025,7 +7025,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-vite-ts@workspace:templates/react-vite-ts"
   dependencies:
-    "@skyra/discord-components-react": "npm:^4.0.0-alpha.3"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.4"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"
     "@vitejs/plugin-react": "npm:^4.2.1"
