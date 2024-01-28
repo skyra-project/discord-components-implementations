@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+	color: #eee;
+	background-color: #2a2a2a;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 2em;
+	margin: 0;
+}
+
+.title {
+	border-bottom: 1px solid #4a4a4a;
+	padding-bottom: 0.25em;
+}
