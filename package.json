@@ -5,6 +5,9 @@
 		"no-framework-vite",
 		"react-vite-ts"
 	],
+	"scripts": {
+		"react": "yarn workspace react-vite-ts run dev"
+	},
 	"packageManager": "yarn@4.0.2",
 	"devDependencies": {
 		"@sapphire/prettier-config": "^2.0.0",

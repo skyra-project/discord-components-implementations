@@ -290,7 +290,10 @@
 					<discord-system-message type="join">
 						Welcome, <i style="color: #a155ab">Snazzah</i>. We hope you brought pizza.
 						<discord-reactions slot="reactions">
-							<discord-reaction name="👀" emoji="/eyes.svg"></discord-reaction>
+							<discord-reaction
+								name="👀"
+								emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/eyes.svg"
+							></discord-reaction>
 						</discord-reactions>
 					</discord-system-message>
 					<discord-system-message type="join">
@@ -335,8 +338,17 @@
 					<discord-message profile="favna">
 						React to this message!
 						<discord-reactions slot="reactions">
-							<discord-reaction name="👍" emoji="/thumbsup.svg" count="1"></discord-reaction>
-							<discord-reaction name="👀" emoji="/eyes.svg" count="2" reacted></discord-reaction>
+							<discord-reaction
+								name="👍"
+								emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/thumbsup.svg"
+								count="1"
+							></discord-reaction>
+							<discord-reaction
+								name="👀"
+								emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/eyes.svg"
+								count="2"
+								reacted
+							></discord-reaction>
 							<discord-reaction
 								interactive="true"
 								name="dragonite"
@@ -401,14 +413,25 @@
 								<discord-button type="secondary">Secondary Button</discord-button>
 								<discord-button type="success">Green Button</discord-button>
 								<discord-button type="destructive">Red Button</discord-button>
-								<discord-button url="https://join.skyra.pw" emoji="/eyes.svg" emoji-name="👀">Link</discord-button>
+								<discord-button
+									url="https://join.skyra.pw"
+									emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/eyes.svg"
+									emoji-name="👀"
+									>Link</discord-button
+								>
 							</discord-action-row>
 							<discord-action-row>
 								<discord-button type="primary" disabled>Primary Button</discord-button>
 								<discord-button type="secondary" disabled>Secondary Button</discord-button>
 								<discord-button type="success" disabled>Green Button</discord-button>
 								<discord-button type="destructive" disabled>Red Button</discord-button>
-								<discord-button url="https://join.skyra.pw" disabled emoji="/eyes.svg" emoji-name="👀">Link</discord-button>
+								<discord-button
+									url="https://join.skyra.pw"
+									disabled
+									emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/eyes.svg"
+									emoji-name="👀"
+									>Link</discord-button
+								>
 							</discord-action-row>
 						</discord-attachments>
 					</discord-message>

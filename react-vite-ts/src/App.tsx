@@ -244,7 +244,10 @@ function App() {
 					<DiscordSystemMessage type="join">
 						Welcome, <i style={{ color: '#a155ab' }}>Snazzah</i>. We hope you brought pizza.
 						<DiscordReactions slot="reactions">
-							<DiscordReaction name="👀" emoji="/eyes.svg"></DiscordReaction>
+							<DiscordReaction
+								name="👀"
+								emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/eyes.svg"
+							></DiscordReaction>
 						</DiscordReactions>
 					</DiscordSystemMessage>
 					<DiscordSystemMessage type="join">
@@ -306,8 +309,17 @@ function App() {
 					<DiscordMessage profile="favna">
 						React to this message!
 						<DiscordReactions slot="reactions">
-							<DiscordReaction name="👍" emoji="/thumbsup.svg" count={1}></DiscordReaction>
-							<DiscordReaction name="👀" emoji="/eyes.svg" count={2} reacted></DiscordReaction>
+							<DiscordReaction
+								name="👍"
+								emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/thumbsup.svg"
+								count={1}
+							></DiscordReaction>
+							<DiscordReaction
+								name="👀"
+								emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/eyes.svg"
+								count={2}
+								reacted
+							></DiscordReaction>
 							<DiscordReaction
 								interactive
 								name="dragonite"
@@ -389,7 +401,11 @@ function App() {
 								<DiscordButton type="secondary">Secondary Button</DiscordButton>
 								<DiscordButton type="success">Green Button</DiscordButton>
 								<DiscordButton type="destructive">Red Button</DiscordButton>
-								<DiscordButton url="https://join.skyra.pw" emoji="/eyes.svg" emojiName="👀">
+								<DiscordButton
+									url="https://join.skyra.pw"
+									emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/eyes.svg"
+									emojiName="👀"
+								>
 									Link
 								</DiscordButton>
 							</DiscordActionRow>
@@ -406,7 +422,12 @@ function App() {
 								<DiscordButton type="destructive" disabled>
 									Red Button
 								</DiscordButton>
-								<DiscordButton url="https://join.skyra.pw" disabled emoji="/eyes.svg" emojiName="👀">
+								<DiscordButton
+									url="https://join.skyra.pw"
+									disabled
+									emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/eyes.svg"
+									emojiName="👀"
+								>
 									Link
 								</DiscordButton>
 							</DiscordActionRow>
