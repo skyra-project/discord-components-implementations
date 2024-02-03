@@ -179,7 +179,10 @@ function App() {
 				<DiscordMessages>
 					<DiscordMessage profile="favna">
 						Hey these are some custom emojis:
-						<DiscordCustomEmoji name="blobparty" url="/blobparty.gif"></DiscordCustomEmoji>
+						<DiscordCustomEmoji
+							name="blobparty"
+							url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/blobparty.gif"
+						></DiscordCustomEmoji>
 						<DiscordCustomEmoji name="skyra" url="https://github.com/NM-EEA-Y.png"></DiscordCustomEmoji>
 						<DiscordEmbed slot="embeds" color="#0F52BA" embed-title="diamond Emojis in the embed title">
 							<DiscordEmbedDescription slot="description">
