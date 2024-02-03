@@ -6394,6 +6394,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nextjs-app-directory-ts@workspace:templates/nextjs-app-directory-ts":
+  version: 0.0.0-use.local
+  resolution: "nextjs-app-directory-ts@workspace:templates/nextjs-app-directory-ts"
+  dependencies:
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.5"
+    "@types/node": "npm:^20.11.16"
+    "@types/react": "npm:^18.2.52"
+    "@types/react-dom": "npm:^18.2.18"
+    next: "npm:14.1.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
 "nextjs-ts@workspace:templates/nextjs-ts":
   version: 0.0.0-use.local
   resolution: "nextjs-ts@workspace:templates/nextjs-ts"
