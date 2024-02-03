@@ -1,4 +1,4 @@
 {
-	"recommendations": ["esbenp.prettier-vscode", "angular.ng-template"],
+	"recommendations": ["esbenp.prettier-vscode", "angular.ng-template", "Vue.volar", "Vue.vscode-typescript-vue-plugin"],
 	"unwantedRecommendations": []
 }
