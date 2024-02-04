@@ -3,9 +3,6 @@
 	"workspaces": [
 		"templates/*"
 	],
-	"scripts": {
-		"react": "yarn workspace react-vite-ts run dev"
-	},
 	"packageManager": "yarn@4.1.0",
 	"devDependencies": {
 		"@sapphire/prettier-config": "^2.0.0",
