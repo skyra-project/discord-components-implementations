@@ -17,6 +17,7 @@ jobs:
           - nextjs-app-directory-ts
           - nextjs-ts
           - no-framework-vite
+          - nuxt3-ts
           - react-vite-ts
           - vue-vite-ts
     steps:
