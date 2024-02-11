@@ -36,7 +36,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Discord Components Sample</title>
+				<title>NextJS Pages Sample</title>
 				<meta name="description" content="Sample for Discord Components using NextJS in App Routing mode" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
