@@ -27,16 +27,15 @@ function App() {
 					<discord-message prop:profile="maximillian">
 						Hey, <discord-mention>Alyx Vargas</discord-mention> and <discord-mention>Dawn</discord-mention>. Welcome to our server!
 						<br />
-						Be sure to read through the <discord-mention prop:type="channel">rules</discord-mention>. You can ping
+						Be sure to read through the <discord-mention prop:type="channel">rules</discord-mention>. You can ping{' '}
 						<discord-mention prop:type="role" prop:color="#70f0b4">
 							Support
-						</discord-mention>
+						</discord-mention>{' '}
 						if you need help.
 					</discord-message>
 					<discord-message prop:profile="willard">Hello everyone! How's it going?</discord-message>
 					<discord-message prop:author="Alyx Vargas" prop:highlight={true}>
-						Thank you
-						<discord-mention>Maximillian Osborn</discord-mention>!
+						Thank you <discord-mention>Maximillian Osborn</discord-mention>!
 					</discord-message>
 					<discord-message
 						prop:author="Kayla Feeney"
@@ -71,8 +70,7 @@ function App() {
 					<discord-message>Look at me I'm a beautiful butterfly</discord-message>
 					<discord-message prop:edited={true}>Fluttering in the sunlight 🌞</discord-message>
 					<discord-message prop:author="Alyx Vargas">
-						Thank you
-						<discord-mention prop:highlight={true}>Maximillian Osborn</discord-mention>!
+						Thank you <discord-mention prop:highlight={true}>Maximillian Osborn</discord-mention>!
 					</discord-message>
 				</discord-messages>
 				<h3 class="title">Compact mode</h3>
@@ -121,21 +119,18 @@ function App() {
 				<discord-messages>
 					<discord-message prop:profile="maximillian">
 						Hey, <discord-mention>Alyx Vargas</discord-mention> and <discord-mention>Dawn</discord-mention>. Welcome to our server! Be
-						sure to read through the <discord-mention prop:type="channel">rules</discord-mention>. You can ping
+						sure to read through the <discord-mention prop:type="channel">rules</discord-mention>. You can ping{' '}
 						<discord-mention prop:type="role" prop:color="#70f0b4">
 							Support
-						</discord-mention>
-						if you need help. Feel free to join
-						<discord-mention prop:type="voice">General</discord-mention>
+						</discord-mention>{' '}
+						if you need help. Feel free to join <discord-mention prop:type="voice">General</discord-mention>
 						and talk with us and post thoughts in <discord-mention prop:type="forum">feedback</discord-mention>.
 					</discord-message>
 					<discord-message prop:author="Alyx Vargas">
-						Hey there
-						<discord-mention prop:highlight={true}>Maximillian Osborn</discord-mention>, thanks! I will!
+						Hey there <discord-mention prop:highlight={true}>Maximillian Osborn</discord-mention>, thanks! I will!
 					</discord-message>
 					<discord-message prop:profile="maximillian">
-						Also, make sure to run
-						<discord-mention prop:type="slash">profile</discord-mention> to create your server profile!
+						Also, make sure to run <discord-mention prop:type="slash">profile</discord-mention> to create your server profile!
 					</discord-message>
 				</discord-messages>
 				<h3 class="title">Custom Discord Emojis</h3>
@@ -608,6 +603,14 @@ function App() {
 								</discord-embed-field>
 							</discord-embed-fields>
 						</discord-embed>
+					</discord-message>
+				</discord-messages>
+				<h3 class="title">Headers</h3>
+				<discord-messages>
+					<discord-message prop:profile="favna">
+						<discord-header prop:level={1}>This is a header 1</discord-header>
+						<discord-header prop:level={2}>This is a header 2</discord-header>
+						<discord-header prop:level={3}>This is a header 3</discord-header>
 					</discord-message>
 				</discord-messages>
 			</main>

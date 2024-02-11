@@ -12,6 +12,7 @@ import {
 	DiscordEmbedField,
 	DiscordEmbedFields,
 	DiscordEmbedFooter,
+	DiscordHeader,
 	DiscordInvite,
 	DiscordItalic,
 	DiscordLink,
@@ -662,6 +663,14 @@ export default function Home() {
 									</DiscordEmbedField>
 								</DiscordEmbedFields>
 							</DiscordEmbed>
+						</DiscordMessage>
+					</DiscordMessages>
+					<h3 className="title">Headers</h3>
+					<DiscordMessages>
+						<DiscordMessage profile="favna">
+							<DiscordHeader level={1}>This is a header 1</DiscordHeader>
+							<DiscordHeader level={2}>This is a header 2</DiscordHeader>
+							<DiscordHeader level={3}>This is a header 3</DiscordHeader>
 						</DiscordMessage>
 					</DiscordMessages>
 				</main>
