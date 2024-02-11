@@ -597,7 +597,7 @@ function App() {
 									{' '}
 									Some value here{' '}
 								</discord-embed-field>
-								<discord-embed-field prop:fieldTitle="Inline field title" prop:inline={true} inline-index="3">
+								<discord-embed-field prop:fieldTitle="Inline field title" prop:inline={true} prop:inlineIndex={3}>
 									{' '}
 									Some value here{' '}
 								</discord-embed-field>
