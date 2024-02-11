@@ -214,24 +214,24 @@ window.$discordMessage = {
 							name="discord.js - Imagine a bot"
 							icon="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/discordjs.png"
 							url="https://discord.gg/djs"
-							online="16417"
-							members="87147"
-							verified="true"
+							:online=16417
+							:members=87147
+							verified
 						></discord-invite>
 						<discord-invite
 							name="The Coding Den"
 							icon="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/tcd.png"
 							url="https://discord.gg/code"
-							online="18456"
-							members="73548"
-							partnered="true"
+							:online=18456
+							:members=73548
+							partnered
 						></discord-invite>
 						<discord-invite
 							name="Skyra Lounge"
 							url="https://join.skyra.pw"
 							icon="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/skyralounge.gif"
-							online="176"
-							members="738"
+							:online=176
+							:members=738
 						></discord-invite>
 					</discord-attachments>
 				</discord-message>
@@ -243,8 +243,8 @@ window.$discordMessage = {
 					<discord-attachment
 						slot="attachments"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
-						height="100"
-						width="100"
+						:height=100
+						:width=100
 						alt="lit-logo"
 					/>
 				</discord-message>
@@ -256,8 +256,8 @@ window.$discordMessage = {
 					<discord-attachment
 						slot="attachments"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
-						height="512"
-						width="512"
+						:height=512
+						:width=512
 						alt="dragonite"
 					/>
 				</discord-message>
@@ -318,19 +318,19 @@ window.$discordMessage = {
 						<discord-reaction
 							name="👍"
 							emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/thumbsup.svg"
-							count="1"
+							:count=1
 						></discord-reaction>
 						<discord-reaction
 							name="👀"
 							emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/eyes.svg"
-							count="2"
+							:count=2
 							reacted
 						></discord-reaction>
 						<discord-reaction
-							interactive="true"
+							interactive
 							name="dragonite"
 							emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
-							count="10"
+							:count=10
 							reacted
 						></discord-reaction>
 					</discord-reactions>
@@ -563,9 +563,9 @@ window.$discordMessage = {
 						thumbnail="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
 					>
 						<discord-embed-fields slot="fields">
-							<discord-embed-field field-title="Inline field title" inline inline-index="1"> Some value here </discord-embed-field>
-							<discord-embed-field field-title="Inline field title" inline inline-index="2"> Some value here </discord-embed-field>
-							<discord-embed-field field-title="Inline field title" inline inline-index="3"> Some value here </discord-embed-field>
+							<discord-embed-field field-title="Inline field title" inline :inline-index="1"> Some value here </discord-embed-field>
+							<discord-embed-field field-title="Inline field title" inline :inline-index="2"> Some value here </discord-embed-field>
+							<discord-embed-field field-title="Inline field title" inline :inline-index="3"> Some value here </discord-embed-field>
 						</discord-embed-fields>
 					</discord-embed>
 				</discord-message>
@@ -573,9 +573,9 @@ window.$discordMessage = {
 			<h3 class="title">Headers</h3>
 			<discord-messages>
 				<discord-message profile="favna">
-					<discord-header level="1">This is a header 1</discord-header>
-					<discord-header level="2">This is a header 2</discord-header>
-					<discord-header level="3">This is a header 3</discord-header>
+					<discord-header :level="1">This is a header 1</discord-header>
+					<discord-header :level="2">This is a header 2</discord-header>
+					<discord-header :level="3">This is a header 3</discord-header>
 				</discord-message>
 			</discord-messages>
 		</main>

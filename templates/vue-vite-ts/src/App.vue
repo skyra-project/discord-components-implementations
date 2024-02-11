@@ -164,7 +164,7 @@ import '@skyra/discord-components-core';
 							url="https://discord.gg/djs"
 							online="16417"
 							members="87147"
-							verified="true"
+							verified
 						></discord-invite>
 						<discord-invite
 							name="The Coding Den"
@@ -172,7 +172,7 @@ import '@skyra/discord-components-core';
 							url="https://discord.gg/code"
 							online="18456"
 							members="73548"
-							partnered="true"
+							partnered
 						></discord-invite>
 						<discord-invite
 							name="Skyra Lounge"
@@ -275,7 +275,7 @@ import '@skyra/discord-components-core';
 							reacted
 						></discord-reaction>
 						<discord-reaction
-							interactive="true"
+							interactive
 							name="dragonite"
 							emoji="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
 							count="10"
@@ -511,9 +511,9 @@ import '@skyra/discord-components-core';
 						thumbnail="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
 					>
 						<discord-embed-fields slot="fields">
-							<discord-embed-field field-title="Inline field title" inline inline-index="1"> Some value here </discord-embed-field>
-							<discord-embed-field field-title="Inline field title" inline inline-index="2"> Some value here </discord-embed-field>
-							<discord-embed-field field-title="Inline field title" inline inline-index="3"> Some value here </discord-embed-field>
+							<discord-embed-field field-title="Inline field title" inline :inline-index="1"> Some value here </discord-embed-field>
+							<discord-embed-field field-title="Inline field title" inline :inline-index="2"> Some value here </discord-embed-field>
+							<discord-embed-field field-title="Inline field title" inline :inline-index="3"> Some value here </discord-embed-field>
 						</discord-embed-fields>
 					</discord-embed>
 				</discord-message>
@@ -521,9 +521,9 @@ import '@skyra/discord-components-core';
 			<h3 class="title">Headers</h3>
 			<discord-messages>
 				<discord-message profile="favna">
-					<discord-header level="1">This is a header 1</discord-header>
-					<discord-header level="2">This is a header 2</discord-header>
-					<discord-header level="3">This is a header 3</discord-header>
+					<discord-header :level="1">This is a header 1</discord-header>
+					<discord-header :level="2">This is a header 2</discord-header>
+					<discord-header :level="3">This is a header 3</discord-header>
 				</discord-message>
 			</discord-messages>
 		</main>
