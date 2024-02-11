@@ -9,7 +9,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@skyra/discord-components-core": "^4.0.0-alpha.12",
+		"@skyra/discord-components-core": "^4.0.0-alpha.14",
 		"vue": "^3.4.18"
 	},
 	"devDependencies": {
