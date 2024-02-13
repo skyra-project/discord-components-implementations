@@ -1,0 +1,38 @@
+---
+sidebar_position: 2
+title: Defining components inline
+---
+
+import { DiscordMention, DiscordMessage, DiscordMessages } from '@skyra/discord-components-react';
+
+<DiscordMessages>
+  <DiscordMessage author="Alyx Vargas"> Hey guys, I'm new here! Glad to be able to join you all! </DiscordMessage>
+  <DiscordMessage
+    author="Fenton Smart"
+    avatar="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/avafive.png"
+  >
+    {' '}
+    Hi, I'm new here too!{' '}
+  </DiscordMessage>
+  <DiscordMessage profile="maximillian">
+    Hey, <DiscordMention>Alyx Vargas</DiscordMention> and <DiscordMention>Dawn</DiscordMention>. Welcome to our server!
+    <br />
+    Be sure to read through the <DiscordMention type="channel">rules</DiscordMention>. You can ping{' '}
+    <DiscordMention type="role" color="#70f0b4">
+      Support
+    </DiscordMention>{' '}
+    if you need help.
+  </DiscordMessage>
+  <DiscordMessage profile="willard">Hello everyone! How's it going?</DiscordMessage>
+  <DiscordMessage author="Alyx Vargas" highlight>
+    Thank you <DiscordMention highlight>Maximillian Osborn</DiscordMention>!
+  </DiscordMessage>
+  <DiscordMessage
+    author="Kayla Feeney"
+    avatar="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/avafour.png"
+  >
+    I'm doing well, <DiscordMention>Willard Walton</DiscordMention>. What about yourself?
+  </DiscordMessage>
+  <DiscordMessage profile="willard"> s!8ball How am I doing today? </DiscordMessage>
+  <DiscordMessage profile="skyra"> Yes. </DiscordMessage>
+</DiscordMessages>
