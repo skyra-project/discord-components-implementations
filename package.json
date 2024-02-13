@@ -3,10 +3,12 @@
 	"workspaces": [
 		"templates/*"
 	],
+	"scripts": {
+		"prettier": "prettier --ignore-path .prettierignore"
+	},
 	"packageManager": "yarn@4.1.0",
 	"devDependencies": {
 		"@sapphire/prettier-config": "^2.0.0",
 		"prettier": "^3.2.5"
-	},
-	"prettier": "@sapphire/prettier-config"
+	}
 }
