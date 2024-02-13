@@ -89,7 +89,7 @@ const config: Config = {
 					items: [
 						{
 							label: 'Discord Components (MDX)',
-							to: '/docs/discord-components'
+							to: '/docs/discord-components/discord-components-inline'
 						}
 					]
 				},
