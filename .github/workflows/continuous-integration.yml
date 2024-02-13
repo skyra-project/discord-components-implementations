@@ -19,6 +19,7 @@ jobs:
           - no-framework-vite
           - nuxt3-ts
           - react-vite-ts
+          - solid-vite-ts
           - vue-vite-ts
     steps:
       - name: Checkout Project
