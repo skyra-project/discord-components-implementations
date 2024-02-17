@@ -358,6 +358,13 @@ export const App = component$(() => {
 						Took 100ms.
 					</discord-message>
 				</discord-messages>
+				<h3 class="title">Commands with deleted message</h3>
+				<discord-messages>
+					<discord-message profile="skyra">
+						<discord-reply slot="reply" deleted></discord-reply>
+						Took 100ms.
+					</discord-message>
+				</discord-messages>
 				<h3 class="title">Commands in Compact Mode</h3>
 				<discord-messages compactMode={true}>
 					<discord-message profile="skyra">

@@ -110,7 +110,7 @@ function DiscordComponents() {
 				</DiscordMessages>
 
 				<h3 className={styles.title}>Compact mode</h3>
-				<DiscordMessages compact-mode>
+				<DiscordMessages compactMode>
 					<DiscordMessage>Look at me I'm a beautiful butterfly</DiscordMessage>
 					<DiscordMessage>Fluttering in the moonlight 🌝</DiscordMessage>
 					<DiscordMessage>Waiting for the day when</DiscordMessage>
@@ -380,7 +380,7 @@ function DiscordComponents() {
 				</DiscordMessages>
 
 				<h3 className={styles.title}>Replies in Compact Mode</h3>
-				<DiscordMessages compact-mode>
+				<DiscordMessages compactMode>
 					<DiscordMessage profile="favna">
 						<DiscordReply slot="reply" profile="skyra" edited attachment>
 							What do you think about this image?
@@ -409,8 +409,16 @@ function DiscordComponents() {
 					</DiscordMessage>
 				</DiscordMessages>
 
+				<h3 className={styles.title}>Commands with deleted message</h3>
+				<DiscordMessages>
+					<DiscordMessage profile="skyra">
+						<DiscordReply slot="reply" deleted></DiscordReply>
+						Took 100ms.
+					</DiscordMessage>
+				</DiscordMessages>
+
 				<h3 className={styles.title}>Commands in Compact Mode</h3>
-				<DiscordMessages compact-mode>
+				<DiscordMessages compactMode>
 					<DiscordMessage profile="skyra">
 						<DiscordCommand slot="reply" profile="favna" command="/ping"></DiscordCommand>
 						Pong!

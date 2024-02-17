@@ -356,6 +356,13 @@ function App() {
 						Took 100ms.
 					</discord-message>
 				</discord-messages>
+				<h3 class="title">Commands with deleted message</h3>
+				<discord-messages>
+					<discord-message prop:profile="skyra">
+						<discord-reply prop:slot="reply" prop:deleted={true}></discord-reply>
+						Took 100ms.
+					</discord-message>
+				</discord-messages>
 				<h3 class="title">Commands in Compact Mode</h3>
 				<discord-messages prop:compactMode={true}>
 					<discord-message prop:profile="skyra">

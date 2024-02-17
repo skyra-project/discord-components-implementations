@@ -4248,28 +4248,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@skyra/discord-components-core@npm:^4.0.0-alpha.15":
-  version: 4.0.0-alpha.15
-  resolution: "@skyra/discord-components-core@npm:4.0.0-alpha.15"
+"@skyra/discord-components-core@npm:^4.0.0-alpha.16":
+  version: 4.0.0-alpha.16
+  resolution: "@skyra/discord-components-core@npm:4.0.0-alpha.16"
   dependencies:
     "@lit/context": "npm:^1.1.0"
     "@open-wc/lit-helpers": "npm:^0.6.0"
     lit: "npm:^3.1.2"
-  checksum: 10c0/012d7a2afdaae6b6bb829d69391defeaaa31024bc3aabe1ed166fb8787d3210b38e8668dfb41728583bd858b4f23ae686c8606ecef37535f88014facc164bab5
+  checksum: 10c0/e74273c615181125a851ef56ce0cb3c00aa3df9648594a49b88a6f06733f53ee7793d4e2a983ced20988eb6f2bdc481ac3b9add75a7c1d4321ad766ef1ca2f3a
   languageName: node
   linkType: hard
 
-"@skyra/discord-components-react@npm:^4.0.0-alpha.15":
-  version: 4.0.0-alpha.15
-  resolution: "@skyra/discord-components-react@npm:4.0.0-alpha.15"
+"@skyra/discord-components-react@npm:^4.0.0-alpha.16":
+  version: 4.0.0-alpha.16
+  resolution: "@skyra/discord-components-react@npm:4.0.0-alpha.16"
   dependencies:
     "@lit/react": "npm:^1.0.3"
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.16"
     react: "npm:^18.2.0"
   peerDependencies:
     react: 16.8.x || 17.x || 18.x
     react-dom: 16.8.x || 17.x || 18.x
-  checksum: 10c0/bb500bfe0890dc08691c0ae978ed1d24202698f73ec1272864784a874a4e6791a9e808665327aa861095711c22a435ecbf13d493484a850350e9744103b1fcbe
+  checksum: 10c0/d95760421ad48bdf4bf07ba41c20d9b493256c157a59d9c3b07c5be7efddb60e3138ea5196d7d6e0ba8211313e9591cef93410f745763201a75ff17cfd6609c1
   languageName: node
   linkType: hard
 
@@ -5819,7 +5819,7 @@ __metadata:
     "@angular/platform-browser": "npm:^17.2.1"
     "@angular/platform-browser-dynamic": "npm:^17.2.1"
     "@angular/router": "npm:^17.2.1"
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.16"
     prettier: "npm:^3.2.5"
     rxjs: "npm:~7.8.1"
     tslib: "npm:^2.6.2"
@@ -12780,7 +12780,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs-app-directory-ts@workspace:templates/nextjs-app-directory-ts"
   dependencies:
-    "@skyra/discord-components-react": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.16"
     "@types/node": "npm:^20.11.19"
     "@types/react": "npm:^18.2.56"
     "@types/react-dom": "npm:^18.2.19"
@@ -12795,7 +12795,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs-ts@workspace:templates/nextjs-ts"
   dependencies:
-    "@skyra/discord-components-react": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.16"
     "@types/node": "npm:^20.11.19"
     "@types/react": "npm:^18.2.56"
     "@types/react-dom": "npm:^18.2.19"
@@ -12911,7 +12911,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "no-framework-vite@workspace:templates/no-framework-vite"
   dependencies:
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.16"
     typescript: "npm:^5.3.3"
     vite: "npm:^5.1.3"
   languageName: unknown
@@ -13215,7 +13215,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nuxt-app@workspace:templates/nuxt3-ts"
   dependencies:
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.16"
     nuxt: "npm:^3.10.2"
     vue: "npm:^3.4.19"
     vue-router: "npm:^4.2.5"
@@ -14964,7 +14964,7 @@ __metadata:
   resolution: "qwik-vite-ts@workspace:templates/qwik-vite-ts"
   dependencies:
     "@builder.io/qwik": "npm:^1.4.5"
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.16"
     typescript: "npm:^5.3.3"
     vite: "npm:^5.1.3"
   languageName: unknown
@@ -15079,7 +15079,7 @@ __metadata:
     "@docusaurus/tsconfig": "npm:3.1.1"
     "@docusaurus/types": "npm:3.1.1"
     "@mdx-js/react": "npm:^3.0.1"
-    "@skyra/discord-components-react": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.16"
     clsx: "npm:^2.1.0"
     prism-react-renderer: "npm:^2.3.1"
     react: "npm:^18.2.0"
@@ -15231,7 +15231,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-vite-ts@workspace:templates/react-vite-ts"
   dependencies:
-    "@skyra/discord-components-react": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.16"
     "@types/react": "npm:^18.2.56"
     "@types/react-dom": "npm:^18.2.19"
     "@vitejs/plugin-react": "npm:^4.2.1"
@@ -16438,7 +16438,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "solid-vite-ts@workspace:templates/solid-vite-ts"
   dependencies:
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.16"
     solid-js: "npm:^1.8.15"
     typescript: "npm:^5.3.3"
     vite: "npm:^5.1.3"
@@ -16972,7 +16972,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "svelte-vite-ts@workspace:templates/svelte-vite-ts"
   dependencies:
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.16"
     "@sveltejs/vite-plugin-svelte": "npm:^3.0.2"
     "@tsconfig/svelte": "npm:^5.0.2"
     svelte: "npm:^4.2.11"
@@ -17009,7 +17009,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sveltekit-ts@workspace:templates/sveltekit-ts"
   dependencies:
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.16"
     "@sveltejs/adapter-auto": "npm:^3.1.1"
     "@sveltejs/kit": "npm:^2.5.0"
     "@sveltejs/vite-plugin-svelte": "npm:^3.0.2"
@@ -18324,7 +18324,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vue-vite-ts@workspace:templates/vue-vite-ts"
   dependencies:
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.15"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.16"
     "@vitejs/plugin-vue": "npm:^5.0.4"
     typescript: "npm:^5.3.3"
     vite: "npm:^5.1.3"
