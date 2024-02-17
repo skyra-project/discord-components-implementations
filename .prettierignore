@@ -12,6 +12,8 @@ templates/nuxt3-ts/.nuxt/
 templates/nuxt3-ts/.output/
 templates/nuxt3-ts/node_modules/
 
+templates/qwik-vite-ts/dist/
+
 templates/react-docusaurus-ts/.docusaurus/
 templates/react-docusaurus-ts/build/
 templates/react-docusaurus-ts/node_modules/
