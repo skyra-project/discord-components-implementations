@@ -1,11 +1,10 @@
-import { component$ } from '@builder.io/qwik'
+import { component$ } from '@builder.io/qwik';
 import '@skyra/discord-components-core';
 
-import './app.css'
+import './app.css';
 
 export const App = component$(() => {
-
-  return (
+	return (
 		<div>
 			<div>
 				<h1 class="logo">&#64;skyra/discord-components-core</h1>
@@ -623,5 +622,5 @@ export const App = component$(() => {
 				</discord-messages>
 			</main>
 		</div>
-  );
-})
+	);
+});
