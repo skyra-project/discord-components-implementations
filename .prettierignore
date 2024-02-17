@@ -21,3 +21,7 @@ templates/react-vite-ts/dist/
 templates/solid-vite-ts/dist/
 
 templates/vue-vite-ts/dist/
+
+templates/svelte-vite-ts/dist/
+
+templates/sveltekit-ts/.svelte-kit/
