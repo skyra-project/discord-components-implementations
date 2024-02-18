@@ -627,6 +627,65 @@ export const App = component$(() => {
 						<discord-header level={3}>This is a header 3</discord-header>
 					</discord-message>
 				</discord-messages>
+
+				<h3 class="title">Ordered list items</h3>
+				<discord-messages>
+					<discord-message profile="favna">
+						<discord-ordered-list>
+							<discord-list-item>This is an ordered list item</discord-list-item>
+							<discord-ordered-list start={99}>
+								<discord-list-item>You can start your list item at a custom number</discord-list-item>
+								<discord-list-item>We will calculate the length internally</discord-list-item>
+								<discord-list-item>This whole level is considered to have a start number length of 3</discord-list-item>
+							</discord-ordered-list>
+						</discord-ordered-list>
+					</discord-message>
+				</discord-messages>
+
+				<h3 class="title">Unordered list items</h3>
+				<discord-messages>
+					<discord-message profile="favna">
+						<discord-unordered-list>
+							<discord-list-item>Discord</discord-list-item>
+							<discord-unordered-list>
+								<discord-list-item>imposes</discord-list-item>
+								<discord-unordered-list>
+									<discord-list-item>a</discord-list-item>
+									<discord-unordered-list>
+										<discord-list-item>limit</discord-list-item>
+										<discord-unordered-list>
+											<discord-list-item>of</discord-list-item>
+											<discord-unordered-list>
+												<discord-list-item>eleven</discord-list-item>
+												<discord-unordered-list>
+													<discord-list-item>levels</discord-list-item>
+													<discord-unordered-list>
+														<discord-list-item>but</discord-list-item>
+														<discord-unordered-list>
+															<discord-list-item>we</discord-list-item>
+															<discord-unordered-list>
+																<discord-list-item>can</discord-list-item>
+																<discord-unordered-list>
+																	<discord-list-item>go (this is 11)</discord-list-item>
+																	<discord-unordered-list>
+																		<discord-list-item>deeper</discord-list-item>
+																		<discord-unordered-list>
+																			<discord-list-item>ain't that cool</discord-list-item>
+																		</discord-unordered-list>
+																	</discord-unordered-list>
+																</discord-unordered-list>
+															</discord-unordered-list>
+														</discord-unordered-list>
+													</discord-unordered-list>
+												</discord-unordered-list>
+											</discord-unordered-list>
+										</discord-unordered-list>
+									</discord-unordered-list>
+								</discord-unordered-list>
+							</discord-unordered-list>
+						</discord-unordered-list>
+					</discord-message>
+				</discord-messages>
 			</main>
 		</div>
 	);

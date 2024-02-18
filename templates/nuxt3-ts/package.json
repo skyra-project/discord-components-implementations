@@ -10,7 +10,7 @@
 		"postinstall": "nuxt prepare"
 	},
 	"dependencies": {
-		"@skyra/discord-components-core": "^4.0.0-alpha.16",
+		"@skyra/discord-components-core": "^4.0.0-alpha.17",
 		"nuxt": "^3.10.2",
 		"vue": "^3.4.19",
 		"vue-router": "^4.2.5"

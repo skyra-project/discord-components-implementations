@@ -15,9 +15,11 @@ import {
 	DiscordInvite,
 	DiscordItalic,
 	DiscordLink,
+	DiscordListItem,
 	DiscordMention,
 	DiscordMessage,
 	DiscordMessages,
+	DiscordOrderedList,
 	DiscordQuote,
 	DiscordReaction,
 	DiscordReactions,
@@ -28,7 +30,8 @@ import {
 	DiscordThread,
 	DiscordThreadMessage,
 	DiscordTime,
-	DiscordUnderlined
+	DiscordUnderlined,
+	DiscordUnorderedList
 } from '@skyra/discord-components-react';
 import styles from './DiscordComponents.module.css';
 
@@ -664,6 +667,65 @@ function DiscordComponents() {
 								</DiscordEmbedField>
 							</DiscordEmbedFields>
 						</DiscordEmbed>
+					</DiscordMessage>
+				</DiscordMessages>
+
+				<h3 className="title">Ordered list items</h3>
+				<DiscordMessages>
+					<DiscordMessage profile="favna">
+						<DiscordOrderedList>
+							<DiscordListItem>This is an ordered list item</DiscordListItem>
+							<DiscordOrderedList start={99}>
+								<DiscordListItem>You can start your list item at a custom number</DiscordListItem>
+								<DiscordListItem>We will calculate the length internally</DiscordListItem>
+								<DiscordListItem>This whole level is considered to have a start number length of 3</DiscordListItem>
+							</DiscordOrderedList>
+						</DiscordOrderedList>
+					</DiscordMessage>
+				</DiscordMessages>
+
+				<h3 className="title">Unordered list items</h3>
+				<DiscordMessages>
+					<DiscordMessage profile="favna">
+						<DiscordUnorderedList>
+							<DiscordListItem>Discord</DiscordListItem>
+							<DiscordUnorderedList>
+								<DiscordListItem>imposes</DiscordListItem>
+								<DiscordUnorderedList>
+									<DiscordListItem>a</DiscordListItem>
+									<DiscordUnorderedList>
+										<DiscordListItem>limit</DiscordListItem>
+										<DiscordUnorderedList>
+											<DiscordListItem>of</DiscordListItem>
+											<DiscordUnorderedList>
+												<DiscordListItem>eleven</DiscordListItem>
+												<DiscordUnorderedList>
+													<DiscordListItem>levels</DiscordListItem>
+													<DiscordUnorderedList>
+														<DiscordListItem>but</DiscordListItem>
+														<DiscordUnorderedList>
+															<DiscordListItem>we</DiscordListItem>
+															<DiscordUnorderedList>
+																<DiscordListItem>can</DiscordListItem>
+																<DiscordUnorderedList>
+																	<DiscordListItem>go (this is 11)</DiscordListItem>
+																	<DiscordUnorderedList>
+																		<DiscordListItem>deeper</DiscordListItem>
+																		<DiscordUnorderedList>
+																			<DiscordListItem>ain't that cool</DiscordListItem>
+																		</DiscordUnorderedList>
+																	</DiscordUnorderedList>
+																</DiscordUnorderedList>
+															</DiscordUnorderedList>
+														</DiscordUnorderedList>
+													</DiscordUnorderedList>
+												</DiscordUnorderedList>
+											</DiscordUnorderedList>
+										</DiscordUnorderedList>
+									</DiscordUnorderedList>
+								</DiscordUnorderedList>
+							</DiscordUnorderedList>
+						</DiscordUnorderedList>
 					</DiscordMessage>
 				</DiscordMessages>
 			</main>
