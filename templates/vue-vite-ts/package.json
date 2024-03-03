@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@skyra/discord-components-core": "^4.0.0-alpha.17",
-		"vue": "^3.4.19"
+		"vue": "^3.4.21"
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^5.0.4",
