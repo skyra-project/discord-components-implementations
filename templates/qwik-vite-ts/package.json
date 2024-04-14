@@ -9,11 +9,11 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"typescript": "^5.4.4",
+		"typescript": "^5.4.5",
 		"vite": "^5.2.8"
 	},
 	"dependencies": {
-		"@builder.io/qwik": "^1.5.1",
+		"@builder.io/qwik": "^1.5.2",
 		"@skyra/discord-components-core": "^4.0.0-alpha.17"
 	}
 }
