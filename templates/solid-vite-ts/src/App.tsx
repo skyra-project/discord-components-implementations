@@ -195,7 +195,7 @@ function App() {
 				</discord-messages>
 				<h3 class="title">Image Attachments with small images</h3>
 				<discord-messages>
-					<discord-message prop:profile="Alyx Vargas">
+					<discord-message prop:author="Alyx Vargas">
 						That's a very small logo image!
 						<discord-attachment
 							prop:slot="attachments"

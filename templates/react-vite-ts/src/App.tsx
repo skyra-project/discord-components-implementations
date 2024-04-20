@@ -242,7 +242,7 @@ function App() {
 
 				<h3 className="title">Image Attachments with small images</h3>
 				<DiscordMessages>
-					<DiscordMessage profile="Alyx Vargas">
+					<DiscordMessage author="Alyx Vargas">
 						That's a very small logo image!
 						<DiscordAttachment
 							slot="attachments"

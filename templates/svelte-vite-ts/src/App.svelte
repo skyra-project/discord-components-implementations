@@ -186,7 +186,7 @@
 			</discord-messages>
 			<h3 class="title">Image Attachments with small images</h3>
 			<discord-messages>
-				<discord-message profile="Alyx Vargas">
+				<discord-message author="Alyx Vargas">
 					That's a very small logo image!
 					<discord-attachment
 						slot="attachments"
