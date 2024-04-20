@@ -1,57 +1,5 @@
 <script setup lang="ts">
 import '@skyra/discord-components-core';
-
-window.$discordMessage = {
-	profiles: {
-		maximillian: {
-			author: 'Maximillian Osborn',
-			avatar: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/avaone.png',
-			roleColor: '#f9d61b'
-		},
-		willard: {
-			author: 'Willard Walton',
-			avatar: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/avatwo.png',
-			roleColor: '#ffb12f'
-		},
-		skyra: {
-			author: 'Skyra',
-			avatar: 'https://github.com/NM-EEA-Y.png',
-			roleColor: '#1e88e5',
-			bot: true,
-			verified: true
-		},
-		favna: {
-			author: 'Favna',
-			avatar: 'https://github.com/favna.png',
-			roleColor: '#a155ab'
-		},
-		discordjs: {
-			author: 'Discord.js Official #announcements',
-			avatar: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/discordjs.png',
-			roleColor: '#ffffff',
-			server: true
-		}
-	},
-
-	emojis: {
-		diamond: {
-			name: 'diamond',
-			url: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/diamond.png'
-		},
-		aichansmile: {
-			name: 'aichansmile',
-			url: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/aichansmile.png'
-		},
-		dragonite: {
-			name: 'dragonite',
-			url: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png'
-		},
-		sapphire: {
-			name: 'sapphire',
-			url: 'https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png'
-		}
-	}
-};
 </script>
 
 <template>
@@ -71,13 +19,13 @@ window.$discordMessage = {
 				>
 					Hi, I'm new here too!
 				</discord-message>
-				<discord-message profile="maximillian">
+				<discord-message v-bind="discordComponentsConfig.profiles.maximillian">
 					Hey, <discord-mention>Alyx Vargas</discord-mention> and <discord-mention>Dawn</discord-mention>. Welcome to our server!<br />Be
 					sure to read through the <discord-mention type="channel">rules</discord-mention>. You can ping
 					<discord-mention type="role" color="#70f0b4">Support</discord-mention>
 					if you need help.
 				</discord-message>
-				<discord-message profile="willard">Hello everyone! How's it going?</discord-message>
+				<discord-message v-bind="discordComponentsConfig.profiles.willard">Hello everyone! How's it going?</discord-message>
 				<discord-message author="Alyx Vargas" highlight>
 					Thank you
 					<discord-mention>Maximillian Osborn</discord-mention>!
@@ -88,8 +36,8 @@ window.$discordMessage = {
 				>
 					I'm doing well, <discord-mention>Willard Walton</discord-mention>. What about yourself?
 				</discord-message>
-				<discord-message profile="willard"> s!8ball How am I doing today? </discord-message>
-				<discord-message profile="skyra"> Yes. </discord-message>
+				<discord-message v-bind="discordComponentsConfig.profiles.willard"> s!8ball How am I doing today? </discord-message>
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra"> Yes. </discord-message>
 			</discord-messages>
 			<h3 class="title">The different kind of mentions</h3>
 			<discord-messages>
@@ -160,7 +108,7 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">Mentions</h3>
 			<discord-messages>
-				<discord-message profile="maximillian">
+				<discord-message v-bind="discordComponentsConfig.profiles.maximillian">
 					Hey, <discord-mention>Alyx Vargas</discord-mention> and <discord-mention>Dawn</discord-mention>. Welcome to our server! Be sure to
 					read through the <discord-mention type="channel">rules</discord-mention>. You can ping
 					<discord-mention type="role" color="#70f0b4">Support</discord-mention>
@@ -172,14 +120,14 @@ window.$discordMessage = {
 					Hey there
 					<discord-mention highlight>Maximillian Osborn</discord-mention>, thanks! I will!
 				</discord-message>
-				<discord-message profile="maximillian">
+				<discord-message v-bind="discordComponentsConfig.profiles.maximillian">
 					Also, make sure to run
 					<discord-mention type="slash">profile</discord-mention> to create your server profile!
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Custom Discord Emojis</h3>
 			<discord-messages>
-				<discord-message profile="favna">
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					Hey these are some custom emojis:
 					<discord-custom-emoji
 						name="blobparty"
@@ -205,7 +153,7 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">Server Invites</h3>
 			<discord-messages>
-				<discord-message profile="favna">
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					discord.gg/djs <br />
 					discord.gg/code <br />
 					discord.gg/6gakFR2
@@ -238,7 +186,7 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">Image Attachments with small images</h3>
 			<discord-messages>
-				<discord-message profile="Alyx Vargas">
+				<discord-message>
 					That's a very small logo image!
 					<discord-attachment
 						slot="attachments"
@@ -251,7 +199,7 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">Image Attachments with large images</h3>
 			<discord-messages>
-				<discord-message profile="favna">
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					Hey guys, check out this awesome, cute, and totally amazing dragon!
 					<discord-attachment
 						slot="attachments"
@@ -302,17 +250,17 @@ window.$discordMessage = {
 				<discord-system-message type="thread">
 					<i style="color: #a155ab">Favna</i> started a thread: <i>Skyra Suggestion Thread</i>. See all <i>threads</i>.
 					<discord-thread slot="thread" cta="2 Messages">
-						<discord-thread-message profile="skyra">Pong!</discord-thread-message>
+						<discord-thread-message v-bind="discordComponentsConfig.profiles.skyra">Pong!</discord-thread-message>
 					</discord-thread>
 				</discord-system-message>
-				<discord-message profile="favna">
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					Let's make a thread!
 					<discord-thread slot="thread" name="A cool thread!">There are no messages in this thread yet.</discord-thread>
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Reactions</h3>
 			<discord-messages>
-				<discord-message profile="favna">
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					React to this message!
 					<discord-reactions slot="reactions">
 						<discord-reaction
@@ -338,58 +286,58 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">Replies</h3>
 			<discord-messages>
-				<discord-message profile="favna">
-					<discord-reply slot="reply" profile="skyra" edited attachment>What do you think about this image?</discord-reply>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
+					<discord-reply slot="reply" v-bind="discordComponentsConfig.profiles.skyra" edited attachment>What do you think about this image?</discord-reply>
 					Looks nice!
 				</discord-message>
-				<discord-message profile="maximillian" highlight>
-					<discord-reply slot="reply" profile="favna" mentions>Looks nice!</discord-reply>
+				<discord-message v-bind="discordComponentsConfig.profiles.maximillian" highlight>
+					<discord-reply slot="reply" v-bind="discordComponentsConfig.profiles.favna" mentions>Looks nice!</discord-reply>
 					I agree!
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Replies in Compact Mode</h3>
 			<discord-messages compact-mode>
-				<discord-message profile="favna">
-					<discord-reply slot="reply" profile="skyra" edited attachment>What do you think about this image?</discord-reply>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
+					<discord-reply slot="reply" v-bind="discordComponentsConfig.profiles.skyra" edited attachment>What do you think about this image?</discord-reply>
 					Looks nice!
 				</discord-message>
-				<discord-message profile="maximillian" highlight>
-					<discord-reply slot="reply" profile="favna" mentions>Looks nice!</discord-reply>
+				<discord-message v-bind="discordComponentsConfig.profiles.maximillian" highlight>
+					<discord-reply slot="reply" v-bind="discordComponentsConfig.profiles.favna" mentions>Looks nice!</discord-reply>
 					I agree!
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Commands</h3>
 			<discord-messages>
-				<discord-message profile="skyra">
-					<discord-command slot="reply" profile="favna" command="/ping"></discord-command>
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra">
+					<discord-command slot="reply" v-bind="discordComponentsConfig.profiles.favna" command="/ping"></discord-command>
 					Pong!
 				</discord-message>
-				<discord-message profile="skyra" ephemeral>
-					<discord-reply slot="reply" profile="skyra" command>Pong!</discord-reply>
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra" ephemeral>
+					<discord-reply slot="reply" v-bind="discordComponentsConfig.profiles.skyra" command>Pong!</discord-reply>
 					Took 100ms.
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Commands with deleted message</h3>
 			<discord-messages>
-				<discord-message profile="skyra">
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra">
 					<discord-reply slot="reply" deleted></discord-reply>
 					Took 100ms.
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Commands in Compact Mode</h3>
 			<discord-messages compact-mode>
-				<discord-message profile="skyra">
-					<discord-command slot="reply" profile="favna" command="/ping"></discord-command>
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra">
+					<discord-command slot="reply" v-bind="discordComponentsConfig.profiles.favna" command="/ping"></discord-command>
 					Pong!
 				</discord-message>
-				<discord-message profile="skyra" ephemeral>
-					<discord-reply slot="reply" profile="skyra" command>Pong!</discord-reply>
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra" ephemeral>
+					<discord-reply slot="reply" v-bind="discordComponentsConfig.profiles.skyra" command>Pong!</discord-reply>
 					Took 100ms.
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Components</h3>
 			<discord-messages>
-				<discord-message profile="skyra">
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra">
 					Here are some components!
 					<discord-attachments slot="components">
 						<discord-action-row>
@@ -422,11 +370,11 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">Verified Discord bots</h3>
 			<discord-messages>
-				<discord-message profile="skyra"> Wow I just got verified! </discord-message>
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra"> Wow I just got verified! </discord-message>
 			</discord-messages>
 			<h3 class="title">Full embed example</h3>
 			<discord-messages>
-				<discord-message profile="skyra">
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra">
 					<discord-embed
 						slot="embeds"
 						author-image="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
@@ -496,7 +444,7 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">Server crosspost messages</h3>
 			<discord-messages>
-				<discord-message profile="discordjs" timestamp="28/01/2024">
+				<discord-message v-bind="discordComponentsConfig.profiles.discordjs" timestamp="28/01/2024">
 					Hey peeps!
 					<br />
 					<br />
@@ -518,7 +466,7 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">Embedded video</h3>
 			<discord-messages>
-				<discord-message profile="skyra">
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra">
 					<discord-embed
 						slot="embeds"
 						provider="Blender"
@@ -534,7 +482,7 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">Embed fields</h3>
 			<discord-messages>
-				<discord-message profile="skyra">
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra">
 					<discord-embed slot="embeds">
 						<discord-embed-fields slot="fields">
 							<discord-embed-field field-title="Field title"> Some value here. Some value here. Some value here. </discord-embed-field>
@@ -546,13 +494,13 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">A tenor-gif in video format</h3>
 			<discord-messages>
-				<discord-message profile="maximillian">
+				<discord-message v-bind="discordComponentsConfig.profiles.maximillian">
 					<discord-tenor-video slot="attachments" url="https://c.tenor.com/oTeBa4EVepMAAAPo/business-cat-working.mp4" />
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Inline fields</h3>
 			<discord-messages>
-				<discord-message profile="skyra">
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra">
 					<discord-embed slot="embeds">
 						<discord-embed-fields slot="fields">
 							<discord-embed-field field-title="Inline field title" inline inline-index="1"> Some value here </discord-embed-field>
@@ -564,7 +512,7 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">Inline fields with a thumbnail</h3>
 			<discord-messages>
-				<discord-message profile="skyra">
+				<discord-message v-bind="discordComponentsConfig.profiles.skyra">
 					<discord-embed
 						slot="embeds"
 						thumbnail="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/sapphire.png"
@@ -579,7 +527,7 @@ window.$discordMessage = {
 			</discord-messages>
 			<h3 class="title">Headers</h3>
 			<discord-messages>
-				<discord-message profile="favna">
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					<discord-header :level="1">This is a header 1</discord-header>
 					<discord-header :level="2">This is a header 2</discord-header>
 					<discord-header :level="3">This is a header 3</discord-header>
@@ -588,7 +536,7 @@ window.$discordMessage = {
 
 			<h3 class="title">Ordered list items</h3>
 			<discord-messages>
-				<discord-message profile="favna">
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					<discord-ordered-list>
 						<discord-list-item>This is an ordered list item</discord-list-item>
 						<discord-ordered-list :start="99">
@@ -602,7 +550,7 @@ window.$discordMessage = {
 
 			<h3 class="title">Unordered list items</h3>
 			<discord-messages>
-				<discord-message profile="favna">
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					<discord-unordered-list>
 						<discord-list-item>Discord</discord-list-item>
 						<discord-unordered-list>
