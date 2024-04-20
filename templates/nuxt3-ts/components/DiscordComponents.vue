@@ -134,7 +134,7 @@ import '@skyra/discord-components-core';
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/blobparty.gif"
 					></discord-custom-emoji>
 					<discord-custom-emoji name="skyra" url="https://github.com/NM-EEA-Y.png"></discord-custom-emoji>
-					<discord-embed slot="embeds" color="#0F52BA" embed-title="diamond Emojis in the embed title">
+					<discord-embed slot="embeds" color="#0F52BA" v-bind="{ embedEmojisMap: discordComponentsConfig.emojis }" embed-title="diamond Emojis in the embed title">
 						<discord-embed-description slot="description">
 							Custom emojis in the embed description:
 							<discord-custom-emoji
@@ -144,8 +144,13 @@ import '@skyra/discord-components-core';
 							></discord-custom-emoji>
 						</discord-embed-description>
 						<discord-embed-fields slot="fields">
-							<discord-embed-field field-title="dragonite Custom emojis in the field title">
-								Custom emojis in the field content <discord-custom-emoji name="sapphire" embed-emoji></discord-custom-emoji>
+							<discord-embed-field v-bind="{ embedFieldEmojisMap: discordComponentsConfig.emojis }" field-title="dragonite Custom emojis in the field title">
+								Custom emojis in the field content
+								<discord-custom-emoji
+									name="sapphire"
+									v-bind="{ customEmojisMap: discordComponentsConfig.emojis }"
+									embed-emoji
+								></discord-custom-emoji>
 							</discord-embed-field>
 						</discord-embed-fields>
 					</discord-embed>
@@ -287,7 +292,9 @@ import '@skyra/discord-components-core';
 			<h3 class="title">Replies</h3>
 			<discord-messages>
 				<discord-message v-bind="discordComponentsConfig.profiles.favna">
-					<discord-reply slot="reply" v-bind="discordComponentsConfig.profiles.skyra" edited attachment>What do you think about this image?</discord-reply>
+					<discord-reply slot="reply" v-bind="discordComponentsConfig.profiles.skyra" edited attachment
+						>What do you think about this image?</discord-reply
+					>
 					Looks nice!
 				</discord-message>
 				<discord-message v-bind="discordComponentsConfig.profiles.maximillian" highlight>
@@ -298,7 +305,9 @@ import '@skyra/discord-components-core';
 			<h3 class="title">Replies in Compact Mode</h3>
 			<discord-messages compact-mode>
 				<discord-message v-bind="discordComponentsConfig.profiles.favna">
-					<discord-reply slot="reply" v-bind="discordComponentsConfig.profiles.skyra" edited attachment>What do you think about this image?</discord-reply>
+					<discord-reply slot="reply" v-bind="discordComponentsConfig.profiles.skyra" edited attachment
+						>What do you think about this image?</discord-reply
+					>
 					Looks nice!
 				</discord-message>
 				<discord-message v-bind="discordComponentsConfig.profiles.maximillian" highlight>
