@@ -1,7 +1,6 @@
 {
 	"name": "no-framework-vite",
 	"version": "1.0.0",
-	"description": "A template for HTML and CSS",
 	"main": "index.html",
 	"type": "module",
 	"license": "MIT",
