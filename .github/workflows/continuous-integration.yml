@@ -15,6 +15,7 @@ jobs:
       matrix:
         path:
           - angular
+          - astro
           - nextjs-app-directory-ts
           - nextjs-ts
           - no-framework-vite
