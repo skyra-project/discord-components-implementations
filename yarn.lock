@@ -6959,6 +6959,7 @@ __metadata:
     "@astrojs/lit": "npm:^4.0.1"
     "@astrojs/react": "npm:^3.3.0"
     "@skyra/discord-components-core": "npm:^4.0.0-alpha.18"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.18"
     "@webcomponents/template-shadowroot": "npm:^0.2.1"
     astro: "npm:^4.6.3"
     lit: "npm:^3.1.3"
