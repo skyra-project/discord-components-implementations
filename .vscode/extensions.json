@@ -1,4 +1,4 @@
 {
-	"recommendations": ["esbenp.prettier-vscode", "angular.ng-template", "Vue.volar", "svelte.svelte-vscode"],
+	"recommendations": ["esbenp.prettier-vscode", "angular.ng-template", "Vue.volar", "svelte.svelte-vscode", "astro-build.astro-vscode"],
 	"unwantedRecommendations": []
 }

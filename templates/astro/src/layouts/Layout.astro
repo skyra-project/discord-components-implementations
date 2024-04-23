@@ -1,0 +1,37 @@
+---
+interface Props {
+}
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Sample for Discord Components using Astro" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Sample</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+body {
+	color: #eee;
+	background-color: #2a2a2a;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 2em;
+	margin: 0;
+}
+
+.title {
+	border-bottom: 1px solid #4a4a4a;
+	padding-bottom: 0.25em;
+}
+</style>
