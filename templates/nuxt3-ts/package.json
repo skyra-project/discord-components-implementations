@@ -12,7 +12,7 @@
 	"dependencies": {
 		"@skyra/discord-components-core": "^4.0.0-alpha.18",
 		"nuxt": "^3.11.2",
-		"vue": "^3.4.23",
+		"vue": "^3.4.25",
 		"vue-router": "^4.3.2"
 	}
 }

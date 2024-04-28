@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@skyra/discord-components-core": "^4.0.0-alpha.18",
-		"solid-js": "^1.8.16"
+		"solid-js": "^1.8.17"
 	},
 	"devDependencies": {
 		"typescript": "^5.4.5",
