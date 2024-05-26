@@ -14,7 +14,7 @@
 	"dependencies": {
 		"@astrojs/check": "^0.7.0",
 		"@astrojs/lit": "^4.0.1",
-		"@astrojs/react": "^3.3.4",
+		"@astrojs/react": "^3.4.0",
 		"@skyra/discord-components-core": "^4.0.0-alpha.18",
 		"@skyra/discord-components-react": "^4.0.0-alpha.18",
 		"@webcomponents/template-shadowroot": "^0.2.1",
