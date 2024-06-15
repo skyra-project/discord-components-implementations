@@ -2860,19 +2860,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/plugin-google-gtag@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@docusaurus/plugin-google-gtag@npm:3.4.0"
-  dependencies:
-    "@docusaurus/core": "npm:3.4.0"
-    "@docusaurus/types": "npm:3.4.0"
-    "@docusaurus/utils-validation": "npm:3.4.0"
-    "@types/gtag.js": "npm:^0.0.12"
-    tslib: "npm:^2.6.0"
-  peerDependencies:
-    react: ^18.0.0
-    react-dom: ^18.0.0
-  checksum: 10c0/1ab2bad4dd47c3aab8393b241efbdad7c5f8b2248970cf9f5e04537de279ffe0d92bf428f8690abf8b522142433e8ea7eb61fbf98a70d606b4e45b95663cb563
+"@docusaurus/plugin-google-gtag@https://registry.yarnpkg.com/@favware/skip-dependency/-/skip-dependency-1.2.1.tgz":
+  version: 1.2.1
+  resolution: "@docusaurus/plugin-google-gtag@https://registry.yarnpkg.com/@favware/skip-dependency/-/skip-dependency-1.2.1.tgz"
+  checksum: 10c0/36e567657f797492bf5ac7777a8bbb614ee2254770caa9f02819662d42180955d5750b927d6b61bb1bcd9578a7c6d49015093e7a6a391e5d20d122aa72691a5d
   languageName: node
   linkType: hard
 
@@ -5991,13 +5982,6 @@ __metadata:
     "@types/qs": "npm:*"
     "@types/serve-static": "npm:*"
   checksum: 10c0/12e562c4571da50c7d239e117e688dc434db1bac8be55613294762f84fd77fbd0658ccd553c7d3ab02408f385bc93980992369dd30e2ecd2c68c358e6af8fabf
-  languageName: node
-  linkType: hard
-
-"@types/gtag.js@npm:^0.0.12":
-  version: 0.0.12
-  resolution: "@types/gtag.js@npm:0.0.12"
-  checksum: 10c0/fee8f4c6e627301b89ab616c9e219bd53fa6ea1ffd1d0a8021e21363f0bdb2cf7eb1a5bcda0c6f1502186379bc7784ec29c932e21634f4e07f9e7a8c56887400
   languageName: node
   linkType: hard
 
