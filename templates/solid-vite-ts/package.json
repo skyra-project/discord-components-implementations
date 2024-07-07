@@ -9,12 +9,12 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@skyra/discord-components-core": "^4.0.0-alpha.18",
-		"solid-js": "^1.8.17"
+		"@skyra/discord-components-core": "^4.0.0-alpha.20",
+		"solid-js": "^1.8.18"
 	},
 	"devDependencies": {
-		"typescript": "^5.4.5",
-		"vite": "^5.3.1",
+		"typescript": "^5.5.3",
+		"vite": "^5.3.3",
 		"vite-plugin-solid": "^2.10.2"
 	}
 }

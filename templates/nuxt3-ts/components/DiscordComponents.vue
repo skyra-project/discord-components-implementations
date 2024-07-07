@@ -201,7 +201,7 @@ import '@skyra/discord-components-core';
 			<discord-messages>
 				<discord-message>
 					That's a very small logo image!
-					<discord-attachment
+					<discord-image-attachment
 						slot="attachments"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
 						:height="100"
@@ -214,7 +214,7 @@ import '@skyra/discord-components-core';
 			<discord-messages>
 				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					Hey guys, check out this awesome, cute, and totally amazing dragon!
-					<discord-attachment
+					<discord-image-attachment
 						slot="attachments"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
 						:height="512"

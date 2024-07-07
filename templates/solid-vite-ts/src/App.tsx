@@ -197,7 +197,7 @@ function App() {
 				<discord-messages>
 					<discord-message prop:author="Alyx Vargas">
 						That's a very small logo image!
-						<discord-attachment
+						<discord-image-attachment
 							prop:slot="attachments"
 							prop:url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
 							prop:height={100}
@@ -210,7 +210,7 @@ function App() {
 				<discord-messages>
 					<discord-message prop:profile="favna">
 						Hey guys, check out this awesome, cute, and totally amazing dragon!
-						<discord-attachment
+						<discord-image-attachment
 							prop:slot="attachments"
 							prop:url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
 							prop:height={512}

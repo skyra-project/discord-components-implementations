@@ -184,28 +184,28 @@ export class DiscordComponentsWrapper extends LitElement {
 				<discord-messages>
 					<discord-message author="Alyx Vargas">
 						That's a very small logo image!
-						<discord-attachment
+						<discord-image-attachment
 							slot="attachments"
 							url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
 							height="100"
 							width="100"
 							alt="lit-logo"
 						>
-						</discord-attachment>
+						</discord-image-attachment>
 					</discord-message>
 				</discord-messages>
 				<h3 class="title">Image Attachments with large images</h3>
 				<discord-messages>
 					<discord-message profile="favna">
 						Hey guys, check out this awesome, cute, and totally amazing dragon!
-						<discord-attachment
+						<discord-image-attachment
 							slot="attachments"
 							url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
 							height="512"
 							width="512"
 							alt="dragonite"
 						>
-						</discord-attachment>
+						</discord-image-attachment>
 					</discord-message>
 				</discord-messages>
 				<h3 class="title">System Messages</h3>

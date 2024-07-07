@@ -1,6 +1,5 @@
 import {
 	DiscordActionRow,
-	DiscordAttachment,
 	DiscordAttachments,
 	DiscordBold,
 	DiscordButton,
@@ -13,6 +12,7 @@ import {
 	DiscordEmbedFields,
 	DiscordEmbedFooter,
 	DiscordHeader,
+	DiscordImageAttachment,
 	DiscordInvite,
 	DiscordItalic,
 	DiscordLink,
@@ -245,7 +245,7 @@ export default function Home() {
 					<DiscordMessages>
 						<DiscordMessage author="Alyx Vargas">
 							That's a very small logo image!
-							<DiscordAttachment
+							<DiscordImageAttachment
 								slot="attachments"
 								url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
 								height={100}
@@ -259,7 +259,7 @@ export default function Home() {
 					<DiscordMessages>
 						<DiscordMessage profile="favna">
 							Hey guys, check out this awesome, cute, and totally amazing dragon!
-							<DiscordAttachment
+							<DiscordImageAttachment
 								slot="attachments"
 								url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
 								height={512}

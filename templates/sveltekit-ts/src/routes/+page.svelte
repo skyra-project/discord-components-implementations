@@ -188,7 +188,7 @@
 			<discord-messages>
 				<discord-message author="Alyx Vargas">
 					That's a very small logo image!
-					<discord-attachment
+					<discord-image-attachment
 						slot="attachments"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
 						height="100"
@@ -201,7 +201,7 @@
 			<discord-messages>
 				<discord-message profile="favna">
 					Hey guys, check out this awesome, cute, and totally amazing dragon!
-					<discord-attachment
+					<discord-image-attachment
 						slot="attachments"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
 						height="512"
