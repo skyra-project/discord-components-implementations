@@ -3,6 +3,7 @@
 	"workspaces": [
 		"templates/*"
 	],
+	"license": "UNLICENSE",
 	"scripts": {
 		"prettier": "prettier --ignore-path .prettierignore"
 	},

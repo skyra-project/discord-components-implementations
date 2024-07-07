@@ -3,7 +3,6 @@
 	"version": "1.0.0",
 	"main": "astro.config.mjs",
 	"type": "module",
-	"license": "MIT",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
