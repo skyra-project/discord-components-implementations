@@ -4,8 +4,6 @@
 
 **Implementations of our [discord-components library][] with various frontend frameworks.**
 
-[![GitHub](https://img.shields.io/github/license/skyra-project/discord-components-implementations)](https://github.com/skyra-project/discord-components-implementations/blob/main/LICENSE.md)
-
 </div>
 
 ## Buy us some doughnuts
