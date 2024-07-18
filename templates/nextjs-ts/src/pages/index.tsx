@@ -1,6 +1,7 @@
 import {
 	DiscordActionRow,
 	DiscordAttachments,
+	DiscordAudioAttachment,
 	DiscordBold,
 	DiscordButton,
 	DiscordCode,
@@ -11,6 +12,7 @@ import {
 	DiscordEmbedField,
 	DiscordEmbedFields,
 	DiscordEmbedFooter,
+	DiscordFileAttachment,
 	DiscordHeader,
 	DiscordImageAttachment,
 	DiscordInvite,
@@ -26,13 +28,15 @@ import {
 	DiscordReactions,
 	DiscordReply,
 	DiscordSpoiler,
+	DiscordSubscript,
 	DiscordSystemMessage,
 	DiscordTenorVideo,
 	DiscordThread,
 	DiscordThreadMessage,
 	DiscordTime,
 	DiscordUnderlined,
-	DiscordUnorderedList
+	DiscordUnorderedList,
+	DiscordVideoAttachment
 } from '@skyra/discord-components-react';
 import Head from 'next/head';
 
@@ -76,7 +80,7 @@ export default function Home() {
 							if you need help.
 						</DiscordMessage>
 						<DiscordMessage profile="willard">Hello everyone! How's it going?</DiscordMessage>
-						<DiscordMessage author="Alyx Vargas" highlight>
+						<DiscordMessage author="Alyx Vargas">
 							Thank you <DiscordMention highlight>Maximillian Osborn</DiscordMention>!
 						</DiscordMessage>
 						<DiscordMessage
@@ -128,32 +132,71 @@ export default function Home() {
 						<DiscordMessage>Oh here it is!</DiscordMessage>
 					</DiscordMessages>
 
+					<h3 className="title">With subsequent messages</h3>
+					<DiscordMessages>
+						<DiscordMessage profile="favna">I can send multiple messages with my avatar showing only once</DiscordMessage>
+						<DiscordMessage profile="favna" messageBodyOnly timestamp="12:39">
+							That's how Discord handles multiple messages from the same author as well
+						</DiscordMessage>
+						<DiscordMessage profile="favna" messageBodyOnly timestamp="12:40">
+							Just keep in mind that Discord does some funky stuff like with time between messages, this library doesn't automatically
+							change what is displayed!
+						</DiscordMessage>
+					</DiscordMessages>
+
+					<h3 className="title">With subsequent messages and compact mode</h3>
+					<DiscordMessages compact-mode>
+						<DiscordMessage profile="favna" twentyFour timestamp="12:38">
+							I can send multiple messages with my avatar showing only once
+						</DiscordMessage>
+						<DiscordMessage profile="favna" messageBodyOnly timestamp="12:39">
+							That's how Discord handles multiple messages from the same author as well
+						</DiscordMessage>
+						<DiscordMessage profile="favna" messageBodyOnly timestamp="12:40">
+							Just keep in mind that Discord does some funky stuff like with time between messages, this library doesn't automatically
+							change what is displayed!
+						</DiscordMessage>
+					</DiscordMessages>
+
 					<h3 className="title">Markdown Styling</h3>
 					<DiscordMessages>
-						<DiscordMessage>
+						<DiscordMessage profile="favna">
 							<DiscordBold>I am bold text!</DiscordBold>
 						</DiscordMessage>
-						<DiscordMessage>
+						<DiscordMessage profile="favna">
 							<DiscordItalic>I am italic text!</DiscordItalic>
 						</DiscordMessage>
-						<DiscordMessage>
+						<DiscordMessage profile="favna">
 							<DiscordBold>
 								<DiscordItalic>I am bold italic text!</DiscordItalic>
 							</DiscordBold>
 						</DiscordMessage>
-						<DiscordMessage>
+						<DiscordMessage profile="favna">
 							<DiscordUnderlined>I am underlined text!</DiscordUnderlined>
 						</DiscordMessage>
-						<DiscordMessage>
+						<DiscordMessage profile="favna">
+							I have subscript:
+							<DiscordSubscript>
+								Only you can see this •
+								<DiscordLink href="https://discord.com/vanityurl/dotcom/steakpants/flour/flower/index11.html" target="_blank">
+									Dismiss message
+								</DiscordLink>
+							</DiscordSubscript>
+						</DiscordMessage>
+						<DiscordMessage profile="favna">
 							<DiscordCode>I am inline-code text!</DiscordCode>
 						</DiscordMessage>
-						<DiscordMessage>
-							<DiscordCode multiline>I am multi-\nline code text!</DiscordCode>
+						<DiscordMessage profile="favna">
+							<DiscordCode multiline>
+								I am multi-
+								<br />
+								line code text!
+							</DiscordCode>
 						</DiscordMessage>
-						<DiscordMessage>
+						<DiscordMessage profile="favna">
 							<DiscordSpoiler>I am spoiler text!</DiscordSpoiler>
 						</DiscordMessage>
-						<DiscordMessage>
+						<DiscordMessage profile="favna">
 							<DiscordQuote>I am quoted text!</DiscordQuote>
 						</DiscordMessage>
 					</DiscordMessages>
@@ -194,7 +237,10 @@ export default function Home() {
 								name="blobparty"
 								url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/blobparty.gif"
 							></DiscordCustomEmoji>
-							<DiscordCustomEmoji name="skyra" url="https://github.com/NM-EEA-Y.png"></DiscordCustomEmoji>
+							<DiscordCustomEmoji
+								name="skyra"
+								url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/skyra.png"
+							></DiscordCustomEmoji>
 							<DiscordEmbed slot="embeds" color="#0F52BA" embed-title="diamond Emojis in the embed title">
 								<DiscordEmbedDescription slot="description">
 									Custom emojis in the embed description:
@@ -261,6 +307,21 @@ export default function Home() {
 						</DiscordMessage>
 					</DiscordMessages>
 
+					<h3 className="title">Image Attachments with custom image components (you can see this in the code only)</h3>
+					<DiscordMessages>
+						<DiscordMessage profile="favna">
+							This has a custom image component!
+							<DiscordImageAttachment slot="attachments" customImageElement>
+								<img
+									src="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
+									height="100"
+									width="100"
+									alt="lit-logo"
+								/>
+							</DiscordImageAttachment>
+						</DiscordMessage>
+					</DiscordMessages>
+
 					<h3 className="title">Image Attachments with large images</h3>
 					<DiscordMessages>
 						<DiscordMessage profile="favna">
@@ -272,6 +333,46 @@ export default function Home() {
 								width={512}
 								alt="dragonite"
 							/>
+						</DiscordMessage>
+					</DiscordMessages>
+
+					<h3 className="title">File Attachments</h3>
+					<DiscordMessages>
+						<DiscordMessage profile="favna">
+							This pk9 file is definitely not a virus! (It's a PKHeX export of a Dragonite)
+							<DiscordFileAttachment
+								slot="attachments"
+								name="dragonite.pk9"
+								bytes={344}
+								href="https://favna.s-ul.eu/pZqminUa.pk9"
+								target="_blank"
+								type="application/octet-stream"
+							></DiscordFileAttachment>
+						</DiscordMessage>
+					</DiscordMessages>
+
+					<h3 className="title">Audio attachments</h3>
+					<DiscordMessages>
+						<DiscordMessage profile="favna">
+							Listen to this amazing song from Baldur's Gate 3!
+							<DiscordAudioAttachment
+								slot="attachments"
+								href="https://favna.s-ul.eu/ZJuz23c7.mp3"
+								name="01 Baldurs Gate 3 OST - Main Theme Part I"
+								bytes={6.38}
+								bytes-unit="MB"
+							></DiscordAudioAttachment>
+						</DiscordMessage>
+					</DiscordMessages>
+					<h3 className="title">Video attachments</h3>
+					<DiscordMessages>
+						<DiscordMessage profile="favna">
+							Look at this video!
+							<DiscordVideoAttachment
+								slot="attachments"
+								href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+								poster="https://favna.s-ul.eu/On2pqpAq.png"
+							></DiscordVideoAttachment>
 						</DiscordMessage>
 					</DiscordMessages>
 
@@ -522,7 +623,7 @@ export default function Home() {
 									<DiscordEmbedField fieldTitle="Created">
 										<DiscordTime>1 year ago</DiscordTime>
 									</DiscordEmbedField>
-									<DiscordEmbedField fieldTitle="Installation"> yarn add @sapphire/framework </DiscordEmbedField>
+									<DiscordEmbedField fieldTitle="Installation"> yarn add &#64;sapphire/framework </DiscordEmbedField>
 									<DiscordEmbedField fieldTitle="Key Features">
 										<ul style={{ paddingInlineStart: '20px', marginBlockStart: '0.5em' }}>
 											<li>
@@ -599,13 +700,13 @@ export default function Home() {
 						<DiscordMessage profile="skyra">
 							<DiscordEmbed
 								slot="embeds"
-								provider="Blender"
-								author-name="Blender"
-								author-url="https://peach.blender.org/download/"
+								provider="MDN"
+								author-name="MDN"
+								author-url="https://developer.mozilla.org/en-US/"
 								color="#019DD8"
-								embed-title="Big Buck Bunny"
-								video="https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg"
-								url="https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg"
+								embed-title="Flower blooming"
+								video="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+								url="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
 							></DiscordEmbed>
 						</DiscordMessage>
 					</DiscordMessages>
@@ -676,6 +777,7 @@ export default function Home() {
 							</DiscordEmbed>
 						</DiscordMessage>
 					</DiscordMessages>
+
 					<h3 className="title">Headers</h3>
 					<DiscordMessages>
 						<DiscordMessage profile="favna">

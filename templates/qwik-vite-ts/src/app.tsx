@@ -30,15 +30,16 @@ export const App = component$(() => {
 					<discord-message profile="maximillian">
 						Hey, <discord-mention>Alyx Vargas</discord-mention> and <discord-mention>Dawn</discord-mention>. Welcome to our server!
 						<br />
-						Be sure to read through the <discord-mention type="channel">rules</discord-mention>. You can ping{' '}
+						Be sure to read through the <discord-mention type="channel">rules</discord-mention>. You can ping
 						<discord-mention type="role" color="#70f0b4">
 							Support
-						</discord-mention>{' '}
+						</discord-mention>
 						if you need help.
 					</discord-message>
 					<discord-message profile="willard">Hello everyone! How's it going?</discord-message>
-					<discord-message author="Alyx Vargas" highlight={true}>
-						Thank you <discord-mention>Maximillian Osborn</discord-mention>!
+					<discord-message author="Alyx Vargas">
+						Thank you
+						<discord-mention highlight={true}>Maximillian Osborn</discord-mention>!
 					</discord-message>
 					<discord-message
 						author="Kayla Feeney"
@@ -73,7 +74,8 @@ export const App = component$(() => {
 					<discord-message>Look at me I'm a beautiful butterfly</discord-message>
 					<discord-message edited={true}>Fluttering in the sunlight 🌞</discord-message>
 					<discord-message author="Alyx Vargas">
-						Thank you <discord-mention highlight={true}>Maximillian Osborn</discord-mention>!
+						Thank you
+						<discord-mention highlight={true}>Maximillian Osborn</discord-mention>!
 					</discord-message>
 				</discord-messages>
 				<h3 class="title">Compact mode</h3>
@@ -84,32 +86,95 @@ export const App = component$(() => {
 					<discord-message>Compact mode would be turned on</discord-message>
 					<discord-message>Oh here it is!</discord-message>
 				</discord-messages>
+				<h3 class="title">With subsequent messages</h3>
+				<discord-messages>
+					<discord-message profile="favna">I can send multiple messages with my avatar showing only once</discord-message>
+					<discord-message
+						profile="favna"
+						messageBodyOnly={true}
+						// @ts-expect-error qwik currently does not support this property that is typed as `string | Date | null`
+						timestamp="12:39"
+					>
+						That's how Discord handles multiple messages from the same author as well
+					</discord-message>
+					<discord-message
+						profile="favna"
+						messageBodyOnly={true}
+						// @ts-expect-error qwik currently does not support this property that is typed as `string | Date | null`
+						timestamp="12:40"
+					>
+						Just keep in mind that Discord does some funky stuff like with time between messages, this library doesn't automatically
+						change what is displayed!
+					</discord-message>
+				</discord-messages>
+
+				<h3 class="title">With subsequent messages and compact mode</h3>
+				<discord-messages compactMode={true}>
+					<discord-message
+						profile="favna"
+						twentyFour={true}
+						// @ts-expect-error qwik currently does not support this property that is typed as `string | Date | null`
+						timestamp="12:38"
+					>
+						I can send multiple messages with my avatar showing only once
+					</discord-message>
+					<discord-message
+						profile="favna"
+						messageBodyOnly={true}
+						// @ts-expect-error qwik currently does not support this property that is typed as `string | Date | null`
+						timestamp="12:39"
+					>
+						That's how Discord handles multiple messages from the same author as well
+					</discord-message>
+					<discord-message
+						profile="favna"
+						messageBodyOnly={true}
+						// @ts-expect-error qwik currently does not support this property that is typed as `string | Date | null`
+						timestamp="12:40"
+					>
+						Just keep in mind that Discord does some funky stuff like with time between messages, this library doesn't automatically
+						change what is displayed!
+					</discord-message>
+				</discord-messages>
 				<h3 class="title">Markdown Styling</h3>
 				<discord-messages>
-					<discord-message>
+					<discord-message profile="favna">
 						<discord-bold>I am bold text!</discord-bold>
 					</discord-message>
-					<discord-message>
+					<discord-message profile="favna">
 						<discord-italic>I am italic text!</discord-italic>
 					</discord-message>
-					<discord-message>
+					<discord-message profile="favna">
 						<discord-bold>
 							<discord-italic>I am bold italic text!</discord-italic>
 						</discord-bold>
 					</discord-message>
-					<discord-message>
+					<discord-message profile="favna">
 						<discord-underlined>I am underlined text!</discord-underlined>
 					</discord-message>
-					<discord-message>
+					<discord-message profile="favna">
+						I have subscript:
+						<discord-subscript>
+							Only you can see this •
+							<discord-link href="https://discord.com/vanityurl/dotcom/steakpants/flour/flower/index11.html" target="_blank">
+								Dismiss message
+							</discord-link>
+						</discord-subscript>
+					</discord-message>
+					<discord-message profile="favna">
 						<discord-code>I am inline-code text!</discord-code>
 					</discord-message>
-					<discord-message>
-						<discord-code multiline={true}>I am multi-\nline code text!</discord-code>
+					<discord-message profile="favna">
+						<discord-code multiline={true}>
+							I am multi-
+							<br />
+							line code
+						</discord-code>
 					</discord-message>
-					<discord-message>
+					<discord-message profile="favna">
 						<discord-spoiler>I am spoiler text!</discord-spoiler>
 					</discord-message>
-					<discord-message>
+					<discord-message profile="favna">
 						<discord-quote>I am quoted text!</discord-quote>
 					</discord-message>
 				</discord-messages>
@@ -122,18 +187,21 @@ export const App = component$(() => {
 				<discord-messages>
 					<discord-message profile="maximillian">
 						Hey, <discord-mention>Alyx Vargas</discord-mention> and <discord-mention>Dawn</discord-mention>. Welcome to our server! Be
-						sure to read through the <discord-mention type="channel">rules</discord-mention>. You can ping{' '}
+						sure to read through the <discord-mention type="channel">rules</discord-mention>. You can ping
 						<discord-mention type="role" color="#70f0b4">
 							Support
-						</discord-mention>{' '}
-						if you need help. Feel free to join <discord-mention type="voice">General</discord-mention>
+						</discord-mention>
+						if you need help. Feel free to join
+						<discord-mention type="voice">General</discord-mention>
 						and talk with us and post thoughts in <discord-mention type="forum">feedback</discord-mention>.
 					</discord-message>
 					<discord-message author="Alyx Vargas">
-						Hey there <discord-mention highlight={true}>Maximillian Osborn</discord-mention>, thanks! I will!
+						Hey there
+						<discord-mention highlight={true}>Maximillian Osborn</discord-mention>, thanks! I will!
 					</discord-message>
 					<discord-message profile="maximillian">
-						Also, make sure to run <discord-mention type="slash">profile</discord-mention> to create your server profile!
+						Also, make sure to run
+						<discord-mention type="slash">profile</discord-mention> to create your server profile!
 					</discord-message>
 				</discord-messages>
 				<h3 class="title">Custom Discord Emojis</h3>
@@ -144,7 +212,10 @@ export const App = component$(() => {
 							name="blobparty"
 							url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/blobparty.gif"
 						></discord-custom-emoji>
-						<discord-custom-emoji name="skyra" url="https://github.com/NM-EEA-Y.png"></discord-custom-emoji>
+						<discord-custom-emoji
+							name="skyra"
+							url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/skyra.png"
+						></discord-custom-emoji>
 						<discord-embed slot="embeds" color="#0F52BA" embedTitle="diamond Emojis in the embed title">
 							<discord-embed-description slot="description">
 								Custom emojis in the embed description:
@@ -197,7 +268,7 @@ export const App = component$(() => {
 				</discord-messages>
 				<h3 class="title">Image Attachments with small images</h3>
 				<discord-messages>
-					<discord-message author="Alyx Vargas">
+					<discord-message>
 						That's a very small logo image!
 						<discord-image-attachment
 							slot="attachments"
@@ -206,6 +277,20 @@ export const App = component$(() => {
 							width={100}
 							alt="lit-logo"
 						/>
+					</discord-message>
+				</discord-messages>
+				<h3 class="title">Image Attachments with custom image components (you can see this in the code only)</h3>
+				<discord-messages>
+					<discord-message profile="favna">
+						This has a custom image component!
+						<discord-image-attachment slot="attachments" custom-image-element>
+							<img
+								src="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
+								height={100}
+								width={100}
+								alt="lit-logo"
+							/>
+						</discord-image-attachment>
 					</discord-message>
 				</discord-messages>
 				<h3 class="title">Image Attachments with large images</h3>
@@ -218,6 +303,44 @@ export const App = component$(() => {
 							height={512}
 							width={512}
 							alt="dragonite"
+						/>
+					</discord-message>
+				</discord-messages>
+				<h3 class="title">File Attachments</h3>
+				<discord-messages>
+					<discord-message profile="favna">
+						This pk9 file is definitely not a virus! (It's a PKHeX export of a Dragonite)
+						<discord-file-attachment
+							slot="attachments"
+							name="dragonite.pk9"
+							bytes={344}
+							href="https://favna.s-ul.eu/pZqminUa.pk9"
+							target="_blank"
+							type="application/octet-stream"
+						/>
+					</discord-message>
+				</discord-messages>
+				<h3 class="title">Audio attachments</h3>
+				<discord-messages>
+					<discord-message profile="favna">
+						Listen to this amazing song from Baldur's Gate 3!
+						<discord-audio-attachment
+							slot="attachments"
+							href="https://favna.s-ul.eu/ZJuz23c7.mp3"
+							name="01 Baldurs Gate 3 OST - Main Theme Part I"
+							bytes={6.38}
+							bytes-unit="MB"
+						/>
+					</discord-message>
+				</discord-messages>
+				<h3 class="title">Video attachments</h3>
+				<discord-messages>
+					<discord-message profile="favna">
+						Look at this video!
+						<discord-video-attachment
+							slot="attachments"
+							href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+							poster="https://favna.s-ul.eu/On2pqpAq.png"
 						/>
 					</discord-message>
 				</discord-messages>
@@ -537,13 +660,13 @@ export const App = component$(() => {
 					<discord-message profile="skyra">
 						<discord-embed
 							slot="embeds"
-							provider="Blender"
-							authorName="Blender"
-							authorUrl="https://peach.blender.org/download/"
+							provider="MDN"
+							authorName="MDN"
+							authorUrl="https://developer.mozilla.org/en-US/"
 							color="#019DD8"
-							embedTitle="Big Buck Bunny"
-							video="https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg"
-							url="https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg"
+							embedTitle="Flower blooming"
+							video="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+							url="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
 						></discord-embed>
 					</discord-message>
 				</discord-messages>
@@ -553,16 +676,13 @@ export const App = component$(() => {
 						<discord-embed slot="embeds">
 							<discord-embed-fields slot="fields">
 								<discord-embed-field fieldTitle="Field title">
-									{' '}
-									Some value here. Some value here. Some value here.{' '}
+									Some value here. Some value here. Some value here.
 								</discord-embed-field>
 								<discord-embed-field fieldTitle="Field title">
-									{' '}
-									Some value here. Some value here. Some value here.{' '}
+									Some value here. Some value here. Some value here.
 								</discord-embed-field>
 								<discord-embed-field fieldTitle="Field title">
-									{' '}
-									Some value here. Some value here. Some value here.{' '}
+									Some value here. Some value here. Some value here.
 								</discord-embed-field>
 							</discord-embed-fields>
 						</discord-embed>
@@ -611,7 +731,7 @@ export const App = component$(() => {
 									{' '}
 									Some value here{' '}
 								</discord-embed-field>
-								<discord-embed-field fieldTitle="Inline field title" inline={true} inlineIndex={3}>
+								<discord-embed-field field-title="Inline field title" inline inline-index="3">
 									{' '}
 									Some value here{' '}
 								</discord-embed-field>
@@ -619,6 +739,7 @@ export const App = component$(() => {
 						</discord-embed>
 					</discord-message>
 				</discord-messages>
+
 				<h3 class="title">Headers</h3>
 				<discord-messages>
 					<discord-message profile="favna">

@@ -13,7 +13,7 @@
 		"vite": "^5.3.4"
 	},
 	"dependencies": {
-		"@builder.io/qwik": "1.7.1",
+		"@builder.io/qwik": "1.5.2",
 		"@skyra/discord-components-core": "^4.0.0-alpha.23"
 	}
 }

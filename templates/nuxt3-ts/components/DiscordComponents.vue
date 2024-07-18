@@ -26,9 +26,9 @@ import '@skyra/discord-components-core';
 					if you need help.
 				</discord-message>
 				<discord-message v-bind="discordComponentsConfig.profiles.willard">Hello everyone! How's it going?</discord-message>
-				<discord-message author="Alyx Vargas" highlight>
+				<discord-message author="Alyx Vargas">
 					Thank you
-					<discord-mention>Maximillian Osborn</discord-mention>!
+					<discord-mention highlight>Maximillian Osborn</discord-mention>!
 				</discord-message>
 				<discord-message
 					author="Kayla Feeney"
@@ -72,32 +72,67 @@ import '@skyra/discord-components-core';
 				<discord-message>Compact mode would be turned on</discord-message>
 				<discord-message>Oh here it is!</discord-message>
 			</discord-messages>
+			<h3 class="title">With subsequent messages</h3>
+			<discord-messages>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna"
+					>I can send multiple messages with my avatar showing only once</discord-message
+				>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna" message-body-only timestamp="12:39"
+					>That's how Discord handles multiple messages from the same author as well</discord-message
+				>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna" message-body-only timestamp="12:40"
+					>Just keep in mind that Discord does some funky stuff like with time between messages, this library doesn't automatically change
+					what is displayed!</discord-message
+				>
+			</discord-messages>
+
+			<h3 class="title">With subsequent messages and compact mode</h3>
+			<discord-messages compact-mode>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna" twenty-four timestamp="12:38"
+					>I can send multiple messages with my avatar showing only once</discord-message
+				>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna" message-body-only timestamp="12:39"
+					>That's how Discord handles multiple messages from the same author as well</discord-message
+				>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna" message-body-only timestamp="12:40"
+					>Just keep in mind that Discord does some funky stuff like with time between messages, this library doesn't automatically change
+					what is displayed!</discord-message
+				>
+			</discord-messages>
 			<h3 class="title">Markdown Styling</h3>
 			<discord-messages>
-				<discord-message>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					<discord-bold>I am bold text!</discord-bold>
 				</discord-message>
-				<discord-message>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					<discord-italic>I am italic text!</discord-italic>
 				</discord-message>
-				<discord-message>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					<discord-bold>
 						<discord-italic>I am bold italic text!</discord-italic>
 					</discord-bold>
 				</discord-message>
-				<discord-message>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					<discord-underlined>I am underlined text!</discord-underlined>
 				</discord-message>
-				<discord-message>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna"
+					>I have subscript:<discord-subscript
+						>Only you can see this •
+						<discord-link href="https://discord.com/vanityurl/dotcom/steakpants/flour/flower/index11.html" target="_blank"
+							>Dismiss message</discord-link
+						></discord-subscript
+					></discord-message
+				>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					<discord-code>I am inline-code text!</discord-code>
 				</discord-message>
-				<discord-message>
-					<discord-code multiline>I am multi-\nline code text!</discord-code>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
+					<discord-code multiline>I am multi-<br />line code</discord-code>
 				</discord-message>
-				<discord-message>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					<discord-spoiler>I am spoiler text!</discord-spoiler>
 				</discord-message>
-				<discord-message>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
 					<discord-quote>I am quoted text!</discord-quote>
 				</discord-message>
 			</discord-messages>
@@ -133,7 +168,10 @@ import '@skyra/discord-components-core';
 						name="blobparty"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/blobparty.gif"
 					></discord-custom-emoji>
-					<discord-custom-emoji name="skyra" url="https://github.com/NM-EEA-Y.png"></discord-custom-emoji>
+					<discord-custom-emoji
+						name="skyra"
+						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/skyra.png"
+					></discord-custom-emoji>
 					<discord-embed
 						slot="embeds"
 						color="#0F52BA"
@@ -210,6 +248,20 @@ import '@skyra/discord-components-core';
 					/>
 				</discord-message>
 			</discord-messages>
+			<h3 class="title">Image Attachments with custom image components (you can see this in the code only)</h3>
+			<discord-messages>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
+					This has a custom image component!
+					<discord-image-attachment slot="attachments" custom-image-element>
+						<nuxt-img
+							src="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
+							:height="100"
+							:width="100"
+							alt="lit-logo"
+						/>
+					</discord-image-attachment>
+				</discord-message>
+			</discord-messages>
 			<h3 class="title">Image Attachments with large images</h3>
 			<discord-messages>
 				<discord-message v-bind="discordComponentsConfig.profiles.favna">
@@ -220,6 +272,44 @@ import '@skyra/discord-components-core';
 						:height="512"
 						:width="512"
 						alt="dragonite"
+					/>
+				</discord-message>
+			</discord-messages>
+			<h3 class="title">File Attachments</h3>
+			<discord-messages>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
+					This pk9 file is definitely not a virus! (It's a PKHeX export of a Dragonite)
+					<discord-file-attachment
+						slot="attachments"
+						name="dragonite.pk9"
+						:bytes="344"
+						href="https://favna.s-ul.eu/pZqminUa.pk9"
+						target="_blank"
+						type="application/octet-stream"
+					/>
+				</discord-message>
+			</discord-messages>
+			<h3 class="title">Audio attachments</h3>
+			<discord-messages>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
+					Listen to this amazing song from Baldur's Gate 3!
+					<discord-audio-attachment
+						slot="attachments"
+						href="https://favna.s-ul.eu/ZJuz23c7.mp3"
+						name="01 Baldurs Gate 3 OST - Main Theme Part I"
+						:bytes="6.38"
+						bytes-unit="MB"
+					/>
+				</discord-message>
+			</discord-messages>
+			<h3 class="title">Video attachments</h3>
+			<discord-messages>
+				<discord-message v-bind="discordComponentsConfig.profiles.favna">
+					Look at this video!
+					<discord-video-attachment
+						slot="attachments"
+						href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+						poster="https://favna.s-ul.eu/On2pqpAq.png"
 					/>
 				</discord-message>
 			</discord-messages>
@@ -486,13 +576,13 @@ import '@skyra/discord-components-core';
 				<discord-message v-bind="discordComponentsConfig.profiles.skyra">
 					<discord-embed
 						slot="embeds"
-						provider="Blender"
-						author-name="Blender"
-						author-url="https://peach.blender.org/download/"
+						provider="MDN"
+						author-name="MDN"
+						author-url="https://developer.mozilla.org/en-US/"
 						color="#019DD8"
-						embed-title="Big Buck Bunny"
-						video="https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg"
-						url="https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg"
+						embed-title="Flower blooming"
+						video="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+						url="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
 					>
 					</discord-embed>
 				</discord-message>
@@ -542,6 +632,7 @@ import '@skyra/discord-components-core';
 					</discord-embed>
 				</discord-message>
 			</discord-messages>
+
 			<h3 class="title">Headers</h3>
 			<discord-messages>
 				<discord-message v-bind="discordComponentsConfig.profiles.favna">
