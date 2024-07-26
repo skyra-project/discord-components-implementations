@@ -166,10 +166,7 @@ import '@skyra/discord-components-core';
 						name="blobparty"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/blobparty.gif"
 					></discord-custom-emoji>
-					<discord-custom-emoji
-						name="skyra"
-						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/skyra.png"
-					></discord-custom-emoji>
+					<discord-custom-emoji name="skyra" url="https://github.com/NM-EEA-Y.png"></discord-custom-emoji>
 					<discord-embed slot="embeds" color="#0F52BA" embed-title="diamond Emojis in the embed title">
 						<discord-embed-description slot="description">
 							Custom emojis in the embed description:

@@ -212,10 +212,7 @@ export const App = component$(() => {
 							name="blobparty"
 							url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/blobparty.gif"
 						></discord-custom-emoji>
-						<discord-custom-emoji
-							name="skyra"
-							url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/skyra.png"
-						></discord-custom-emoji>
+						<discord-custom-emoji name="skyra" url="https://github.com/NM-EEA-Y.png"></discord-custom-emoji>
 						<discord-embed slot="embeds" color="#0F52BA" embedTitle="diamond Emojis in the embed title">
 							<discord-embed-description slot="description">
 								Custom emojis in the embed description:
@@ -675,15 +672,9 @@ export const App = component$(() => {
 					<discord-message profile="skyra">
 						<discord-embed slot="embeds">
 							<discord-embed-fields slot="fields">
-								<discord-embed-field fieldTitle="Field title">
-									Some value here. Some value here. Some value here.
-								</discord-embed-field>
-								<discord-embed-field fieldTitle="Field title">
-									Some value here. Some value here. Some value here.
-								</discord-embed-field>
-								<discord-embed-field fieldTitle="Field title">
-									Some value here. Some value here. Some value here.
-								</discord-embed-field>
+								<discord-embed-field fieldTitle="Field title">Some value here. Some value here. Some value here.</discord-embed-field>
+								<discord-embed-field fieldTitle="Field title">Some value here. Some value here. Some value here.</discord-embed-field>
+								<discord-embed-field fieldTitle="Field title">Some value here. Some value here. Some value here.</discord-embed-field>
 							</discord-embed-fields>
 						</discord-embed>
 					</discord-message>

@@ -219,10 +219,7 @@ export default function DiscordComponents() {
 						name="blobparty"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/blobparty.gif"
 					></DiscordCustomEmoji>
-					<DiscordCustomEmoji
-						name="skyra"
-						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/skyra.png"
-					></DiscordCustomEmoji>
+					<DiscordCustomEmoji name="skyra" url="https://github.com/NM-EEA-Y.png"></DiscordCustomEmoji>
 					<DiscordEmbed slot="embeds" color="#0F52BA" embed-title="diamond Emojis in the embed title">
 						<DiscordEmbedDescription slot="description">
 							Custom emojis in the embed description:

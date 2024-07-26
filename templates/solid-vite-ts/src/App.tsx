@@ -184,10 +184,7 @@ function App() {
 							prop:name="blobparty"
 							prop:url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/blobparty.gif"
 						></discord-custom-emoji>
-						<discord-custom-emoji
-							prop:name="skyra"
-							prop:url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/skyra.png"
-						></discord-custom-emoji>
+						<discord-custom-emoji prop:name="skyra" prop:url="https://github.com/NM-EEA-Y.png"></discord-custom-emoji>
 						<discord-embed prop:slot="embeds" prop:color="#0F52BA" prop:embedTitle="diamond Emojis in the embed title">
 							<discord-embed-description prop:slot="description">
 								Custom emojis in the embed description:

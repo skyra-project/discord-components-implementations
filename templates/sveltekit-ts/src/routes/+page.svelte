@@ -168,7 +168,7 @@
 					></discord-custom-emoji>
 					<discord-custom-emoji
 						name="skyra"
-						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/skyra.png"
+						url="https://github.com/NM-EEA-Y.png"
 					></discord-custom-emoji>
 					<discord-embed slot="embeds" color="#0F52BA" embed-title="diamond Emojis in the embed title">
 						<discord-embed-description slot="description">
