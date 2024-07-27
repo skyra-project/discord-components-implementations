@@ -15,3 +15,12 @@ body {
 	border-bottom: 1px solid #4a4a4a;
 	padding-bottom: 0.25em;
 }
+
+.link {
+	color: #008080;
+	text-decoration: none;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
