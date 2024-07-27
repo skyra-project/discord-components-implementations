@@ -16606,8 +16606,12 @@ __metadata:
   resolution: "preact-vite-ts@workspace:templates/preact-vite-ts"
   dependencies:
     "@preact/preset-vite": "npm:^2.9.0"
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.23"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.23"
+    "@types/react": "npm:^18.3.3"
+    "@types/react-dom": "npm:^18.3.0"
     preact: "npm:^10.23.1"
+    react: "npm:@preact/compat@latest"
+    react-dom: "npm:@preact/compat@latest"
     typescript: "npm:^5.5.4"
     vite: "npm:^5.3.4"
   languageName: unknown
@@ -17014,6 +17018,15 @@ __metadata:
     typescript: "npm:^5.5.3"
   languageName: unknown
   linkType: soft
+
+"react-dom@npm:@preact/compat@latest, react@npm:@preact/compat@latest":
+  version: 17.1.2
+  resolution: "@preact/compat@npm:17.1.2"
+  peerDependencies:
+    preact: "*"
+  checksum: 10c0/b4fb246d8996222c3d090901e88fb376a014164ad81f3985786389e7559acbd81f72c829ad3ff6fcbf58346950c9f48eafd7fe993cc43ca3cd0574e90101c7e1
+  languageName: node
+  linkType: hard
 
 "react-dom@npm:^18.3.1":
   version: 18.3.1
