@@ -1,0 +1,18 @@
+{
+	"name": "htmx-vite-ts",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@skyra/discord-components-core": "^4.0.0-alpha.23"
+	},
+	"devDependencies": {
+		"htmx.org": "^1.9.12",
+		"vite": "^5.3.5"
+	}
+}

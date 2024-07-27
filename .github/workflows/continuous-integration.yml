@@ -16,6 +16,7 @@ jobs:
         path:
           - angular
           - astro
+          - htmx-vite-ts
           - nextjs-app-directory-ts
           - nextjs-ts
           - no-framework-vite
