@@ -756,4 +756,8 @@ import '@skyra/discord-components-core';
 .link:hover {
 	text-decoration: underline;
 }
+
+.link:visited {
+	color: #026060;
+}
 </style>
