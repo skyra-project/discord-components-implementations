@@ -7186,6 +7186,7 @@ __metadata:
     "@webcomponents/template-shadowroot": "npm:^0.2.1"
     astro: "npm:^4.11.6"
     lit: "npm:^3.1.4"
+    prettier: "npm:^3.3.3"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
     typescript: "npm:^5.5.3"
@@ -9271,7 +9272,9 @@ __metadata:
   resolution: "discord-components-implementations@workspace:."
   dependencies:
     "@sapphire/prettier-config": "npm:^2.0.0"
+    lodash.merge: "npm:^4.6.2"
     prettier: "npm:^3.3.3"
+    prettier-plugin-astro: "npm:^0.14.1"
   languageName: unknown
   linkType: soft
 
@@ -12888,6 +12891,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.merge@npm:^4.6.2":
+  version: 4.6.2
+  resolution: "lodash.merge@npm:4.6.2"
+  checksum: 10c0/402fa16a1edd7538de5b5903a90228aa48eb5533986ba7fa26606a49db2572bf414ff73a2c9f5d5fd36b31c46a5d5c7e1527749c07cbcf965ccff5fbdf32c506
+  languageName: node
+  linkType: hard
+
 "lodash.uniq@npm:^4.5.0":
   version: 4.5.0
   resolution: "lodash.uniq@npm:4.5.0"
@@ -14400,6 +14410,7 @@ __metadata:
     "@types/react": "npm:^18.3.3"
     "@types/react-dom": "npm:^18.3.0"
     next: "npm:14.2.5"
+    prettier: "npm:^3.3.3"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
     typescript: "npm:^5.5.3"
@@ -14415,6 +14426,7 @@ __metadata:
     "@types/react": "npm:^18.3.3"
     "@types/react-dom": "npm:^18.3.0"
     next: "npm:14.2.5"
+    prettier: "npm:^3.3.3"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
     typescript: "npm:^5.5.3"
@@ -14538,6 +14550,7 @@ __metadata:
   resolution: "no-framework-vite@workspace:templates/no-framework-vite"
   dependencies:
     "@skyra/discord-components-core": "npm:^4.0.0-alpha.23"
+    prettier: "npm:^3.3.3"
     typescript: "npm:^5.5.3"
     vite: "npm:^5.3.4"
   languageName: unknown
@@ -14898,6 +14911,7 @@ __metadata:
     "@nuxt/image": "npm:^1.7.0"
     "@skyra/discord-components-core": "npm:^4.0.0-alpha.23"
     nuxt: "npm:^3.12.4"
+    prettier: "npm:^3.3.3"
     vue: "npm:^3.4.33"
     vue-router: "npm:^4.4.0"
   languageName: unknown
@@ -16529,6 +16543,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier-plugin-astro@npm:^0.14.1":
+  version: 0.14.1
+  resolution: "prettier-plugin-astro@npm:0.14.1"
+  dependencies:
+    "@astrojs/compiler": "npm:^2.9.1"
+    prettier: "npm:^3.0.0"
+    sass-formatter: "npm:^0.7.6"
+  checksum: 10c0/f812607d422ff36df1bf58534a96590a861dedf41e70f8f36fa9546b91def65b17f4507e1c9212dab56cbbae2f4ab5ff6e7e31370b9198261360c6444daa297c
+  languageName: node
+  linkType: hard
+
 "prettier@npm:^3.0.0, prettier@npm:^3.3.3":
   version: 3.3.3
   resolution: "prettier@npm:3.3.3"
@@ -16756,6 +16781,7 @@ __metadata:
   dependencies:
     "@builder.io/qwik": "npm:1.5.2"
     "@skyra/discord-components-core": "npm:^4.0.0-alpha.23"
+    prettier: "npm:^3.3.3"
     typescript: "npm:^5.5.3"
     vite: "npm:^5.3.4"
   languageName: unknown
@@ -16871,6 +16897,7 @@ __metadata:
     "@mdx-js/react": "npm:^3.0.1"
     "@skyra/discord-components-react": "npm:^4.0.0-alpha.23"
     clsx: "npm:^2.1.1"
+    prettier: "npm:^3.3.3"
     prism-react-renderer: "npm:^2.3.1"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
@@ -17035,6 +17062,7 @@ __metadata:
     "@types/react": "npm:^18.3.3"
     "@types/react-dom": "npm:^18.3.0"
     "@vitejs/plugin-react": "npm:^4.3.1"
+    prettier: "npm:^3.3.3"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
     typescript: "npm:^5.5.3"
@@ -17746,6 +17774,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"s.color@npm:0.0.15":
+  version: 0.0.15
+  resolution: "s.color@npm:0.0.15"
+  checksum: 10c0/50532b1307a65ac5e1076f5b556f5ce7e5c8ea3ff1c73810a226a0109efe84ff196e10017cd906c78a87d9600a26ca7016ac78896232aa05949a98bf2100adf1
+  languageName: node
+  linkType: hard
+
 "sade@npm:^1.7.4, sade@npm:^1.8.1":
   version: 1.8.1
   resolution: "sade@npm:1.8.1"
@@ -17785,6 +17820,15 @@ __metadata:
     mkdirp: "npm:^0.5.1"
     rimraf: "npm:^2.5.2"
   checksum: 10c0/ce1e423fe5b4e57926df7cc6bd24b70271adfbe7b8ff995784f98101878e037327ac31c7a4e317ac3e1579f410e41a477fef40c2376f0dfa4499c8864a26f499
+  languageName: node
+  linkType: hard
+
+"sass-formatter@npm:^0.7.6":
+  version: 0.7.9
+  resolution: "sass-formatter@npm:0.7.9"
+  dependencies:
+    suf-log: "npm:^2.5.3"
+  checksum: 10c0/172eb326121ace1a48e689a1419efab2d780623631d106ac306ac2a055e96813bda36044f20bc4cc28d761427efc136a08d07153d1b8a8ccf0a032dca5fdce3c
   languageName: node
   linkType: hard
 
@@ -18454,6 +18498,7 @@ __metadata:
   resolution: "solid-vite-ts@workspace:templates/solid-vite-ts"
   dependencies:
     "@skyra/discord-components-core": "npm:^4.0.0-alpha.23"
+    prettier: "npm:^3.3.3"
     solid-js: "npm:^1.8.18"
     typescript: "npm:^5.5.3"
     vite: "npm:^5.3.4"
@@ -18883,6 +18928,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"suf-log@npm:^2.5.3":
+  version: 2.5.3
+  resolution: "suf-log@npm:2.5.3"
+  dependencies:
+    s.color: "npm:0.0.15"
+  checksum: 10c0/67edce59cce30964b2bec4f2e726c980c1e83d266adb186e3a92f8d267916cd2ae38f8e5aa14af9df675837708d93b212a7e3241505abec948d7fd3705781f0a
+  languageName: node
+  linkType: hard
+
 "superjson@npm:^2.2.1":
   version: 2.2.1
   resolution: "superjson@npm:2.2.1"
@@ -19013,6 +19067,7 @@ __metadata:
     "@skyra/discord-components-core": "npm:^4.0.0-alpha.23"
     "@sveltejs/vite-plugin-svelte": "npm:^3.1.1"
     "@tsconfig/svelte": "npm:^5.0.4"
+    prettier: "npm:^3.3.3"
     svelte: "npm:^4.2.18"
     svelte-check: "npm:^3.8.4"
     tslib: "npm:^2.6.3"
@@ -19051,6 +19106,7 @@ __metadata:
     "@sveltejs/adapter-auto": "npm:^3.2.2"
     "@sveltejs/kit": "npm:^2.5.18"
     "@sveltejs/vite-plugin-svelte": "npm:^3.1.1"
+    prettier: "npm:^3.3.3"
     svelte: "npm:^4.2.18"
     svelte-check: "npm:^3.8.4"
     tslib: "npm:^2.6.3"
@@ -20628,6 +20684,7 @@ __metadata:
   dependencies:
     "@skyra/discord-components-core": "npm:^4.0.0-alpha.23"
     "@vitejs/plugin-vue": "npm:^5.0.5"
+    prettier: "npm:^3.3.3"
     typescript: "npm:^5.5.3"
     vite: "npm:^5.3.4"
     vue: "npm:^3.4.33"

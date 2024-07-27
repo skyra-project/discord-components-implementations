@@ -6,7 +6,40 @@
 	<div>
 		<div>
 			<h1 class="logo">&#64;skyra/discord-components-core</h1>
-			<span>[<a target="_blank" rel="noopener noreferrer" href="https://github.com/skyra-project/discord-components/">Github</a>]</span>
+			<span
+				>[<a
+					title="GitHub repository"
+					class="link"
+					target="_blank"
+					rel="noopener noreferrer"
+					href="https://github.com/skyra-project/discord-components/">Github</a
+				>]</span
+			>
+		</div>
+
+		<div>
+			<h2>Explanation</h2>
+			<div>
+				This website contains various samples for
+				<a
+					title="GitHub repository"
+					class="link"
+					target="_blank"
+					rel="noopener noreferrer"
+					href="https://github.com/skyra-project/discord-components/">&#64;skyra/discord-components-core</a
+				>
+				which is a webcomponents library (powered by
+				<a title="Lit website" class="link" target="_blank" rel="noopener noreferrer" href="https://lit.dev">Lit</a>) to create Discord-like
+				messages with rich content. The always up-to-date version of this document can be found
+				<a
+					title="Demo index.html"
+					class="link"
+					target="_blank"
+					rel="noopener noreferrer"
+					href="https://github.com/skyra-project/discord-components-implementations/blob/main/templates/sveltekit-ts/src/routes/+page.svelte"
+					>here</a
+				>.
+			</div>
 		</div>
 
 		<main id="demo">
@@ -166,10 +199,7 @@
 						name="blobparty"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/blobparty.gif"
 					></discord-custom-emoji>
-					<discord-custom-emoji
-						name="skyra"
-						url="https://github.com/NM-EEA-Y.png"
-					></discord-custom-emoji>
+					<discord-custom-emoji name="skyra" url="https://github.com/NM-EEA-Y.png"></discord-custom-emoji>
 					<discord-embed slot="embeds" color="#0F52BA" embed-title="diamond Emojis in the embed title">
 						<discord-embed-description slot="description">
 							Custom emojis in the embed description:
@@ -694,5 +724,14 @@
 	.title {
 		border-bottom: 1px solid #4a4a4a;
 		padding-bottom: 0.25em;
+	}
+
+	.link {
+		color: #008080;
+		text-decoration: none;
+	}
+
+	.link:hover {
+		text-decoration: underline;
 	}
 </style>

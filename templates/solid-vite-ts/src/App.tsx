@@ -7,11 +7,48 @@ function App() {
 				<h1 class="logo">&#64;skyra/discord-components-core</h1>
 				<span>
 					[
-					<a target="_blank" rel="noopener noreferrer" href="https://github.com/skyra-project/discord-components/">
+					<a
+						title="GitHub repository"
+						class="link"
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://github.com/skyra-project/discord-components/"
+					>
 						Github
 					</a>
 					]
 				</span>
+			</div>
+
+			<div>
+				<h2>Explanation</h2>
+				<div>
+					This website contains various samples for
+					<a
+						title="GitHub repository"
+						class="link"
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://github.com/skyra-project/discord-components/"
+					>
+						&#64;skyra/discord-components-core
+					</a>
+					which is a webcomponents library (powered by
+					<a title="Lit website" class="link" target="_blank" rel="noopener noreferrer" href="https://lit.dev">
+						Lit
+					</a>
+					) to create Discord-like messages with rich content. The always up-to-date version of this document can be found
+					<a
+						title="Demo index.html"
+						class="link"
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://github.com/skyra-project/discord-components-implementations/blob/main/templates/solid-vite-ts/src/App.tsx"
+					>
+						here
+					</a>
+					.
+				</div>
 			</div>
 
 			<main id="demo">
