@@ -50,3 +50,7 @@ html[data-theme='dark'] body {
 .link:hover {
 	text-decoration: underline;
 }
+
+.link:visited {
+	color: #026060;
+}
