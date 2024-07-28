@@ -11595,15 +11595,15 @@ __metadata:
   resolution: "htmx-vite-ts@workspace:templates/htmx-vite-ts"
   dependencies:
     "@skyra/discord-components-core": "npm:^4.0.0-alpha.23"
-    htmx.org: "npm:^1.9.12"
+    htmx.org: "npm:^2.0.1"
     vite: "npm:^5.3.5"
   languageName: unknown
   linkType: soft
 
-"htmx.org@npm:^1.9.12":
-  version: 1.9.12
-  resolution: "htmx.org@npm:1.9.12"
-  checksum: 10c0/c239a751621501cca35e49c32152b1b7edd1c4f217ef709e84f005346ea0dc0d156cf59b0da91a0dd0b62ddefa98d67945b31e361245c5a2c94cb1b1285fbd2a
+"htmx.org@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "htmx.org@npm:2.0.1"
+  checksum: 10c0/2b08d33104bd207d9285c15c904022164a7ea6fe9b3d7e6154bfbb780b921ec68b1e1d31267ecf2c5c6cb266cb19dcaa1c93c44ad2bd93b1f38e8b3ab54e6db4
   languageName: node
   linkType: hard
 

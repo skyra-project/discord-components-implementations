@@ -12,7 +12,7 @@
 		"@skyra/discord-components-core": "^4.0.0-alpha.23"
 	},
 	"devDependencies": {
-		"htmx.org": "^1.9.12",
+		"htmx.org": "^2.0.1",
 		"vite": "^5.3.5"
 	}
 }
