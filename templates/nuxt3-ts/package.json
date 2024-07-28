@@ -13,7 +13,7 @@
 		"@nuxt/image": "^1.7.0",
 		"@skyra/discord-components-core": "^4.0.0-alpha.23",
 		"nuxt": "^3.12.4",
-		"vue": "^3.4.33",
+		"vue": "^3.4.34",
 		"vue-router": "^4.4.0"
 	},
 	"devDependencies": {
