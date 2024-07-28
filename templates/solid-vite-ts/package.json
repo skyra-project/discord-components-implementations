@@ -10,12 +10,12 @@
 	},
 	"dependencies": {
 		"@skyra/discord-components-core": "^4.0.0-alpha.23",
-		"solid-js": "^1.8.18"
+		"solid-js": "^1.8.19"
 	},
 	"devDependencies": {
 		"prettier": "^3.3.3",
 		"typescript": "^5.5.3",
-		"vite": "^5.3.4",
+		"vite": "^5.3.5",
 		"vite-plugin-solid": "^2.10.2"
 	}
 }
