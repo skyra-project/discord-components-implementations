@@ -9,14 +9,14 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@skyra/discord-components-core": "^4.0.0-alpha.26",
-		"vue": "^3.4.35"
+		"@skyra/discord-components-core": "^4.0.0-alpha.29",
+		"vue": "^3.4.37"
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^5.1.2",
 		"prettier": "^3.3.3",
 		"typescript": "^5.5.3",
-		"vite": "^5.3.5",
+		"vite": "^5.4.0",
 		"vue-tsc": "^2.0.29"
 	}
 }
