@@ -11,10 +11,10 @@
 	},
 	"dependencies": {
 		"@nuxt/image": "^1.7.0",
-		"@skyra/discord-components-core": "^4.0.0-alpha.26",
+		"@skyra/discord-components-core": "^4.0.0-alpha.29",
 		"nuxt": "^3.12.4",
-		"vue": "^3.4.35",
-		"vue-router": "^4.4.2"
+		"vue": "^3.4.37",
+		"vue-router": "^4.4.3"
 	},
 	"devDependencies": {
 		"prettier": "^3.3.3"

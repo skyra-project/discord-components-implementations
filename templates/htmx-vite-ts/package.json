@@ -9,10 +9,10 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@skyra/discord-components-core": "^4.0.0-alpha.26"
+		"@skyra/discord-components-core": "^4.0.0-alpha.29"
 	},
 	"devDependencies": {
 		"htmx.org": "^1.9.12",
-		"vite": "^5.3.5"
+		"vite": "^5.4.0"
 	}
 }
