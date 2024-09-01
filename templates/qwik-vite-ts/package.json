@@ -15,6 +15,6 @@
 	},
 	"dependencies": {
 		"@builder.io/qwik": "1.5.2",
-		"@skyra/discord-components-core": "^4.0.0-alpha.33"
+		"@skyra/discord-components-core": "^4.0.0-alpha.34"
 	}
 }

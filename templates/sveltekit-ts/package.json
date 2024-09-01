@@ -10,11 +10,11 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"dependencies": {
-		"@skyra/discord-components-core": "^4.0.0-alpha.33"
+		"@skyra/discord-components-core": "^4.0.0-alpha.34"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.2.4",
-		"@sveltejs/kit": "^2.5.24",
+		"@sveltejs/kit": "^2.5.25",
 		"@sveltejs/vite-plugin-svelte": "^3.1.2",
 		"prettier": "^3.3.3",
 		"svelte": "^4.2.19",
