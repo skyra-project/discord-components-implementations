@@ -9,8 +9,8 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@skyra/discord-components-core": "^4.0.0-alpha.33",
-		"solid-js": "^1.8.21"
+		"@skyra/discord-components-core": "^4.0.0-alpha.34",
+		"solid-js": "^1.8.22"
 	},
 	"devDependencies": {
 		"prettier": "^3.3.3",
