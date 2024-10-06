@@ -10,10 +10,10 @@
 		"postinstall": "nuxt prepare"
 	},
 	"dependencies": {
-		"@nuxt/image": "^1.8.0",
+		"@nuxt/image": "^1.8.1",
 		"@skyra/discord-components-core": "^4.0.0-alpha.34",
 		"nuxt": "^3.13.2",
-		"vue": "^3.5.10",
+		"vue": "^3.5.11",
 		"vue-router": "^4.4.5"
 	},
 	"devDependencies": {
