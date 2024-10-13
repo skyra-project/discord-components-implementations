@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@skyra/discord-components-core": "^4.0.0-alpha.34",
-		"solid-js": "^1.9.1"
+		"solid-js": "^1.9.2"
 	},
 	"devDependencies": {
 		"prettier": "^3.3.3",
