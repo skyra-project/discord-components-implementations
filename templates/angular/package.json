@@ -19,12 +19,12 @@
 		"@angular/router": "^18.2.8",
 		"@skyra/discord-components-core": "^4.0.0-alpha.34",
 		"rxjs": "~7.8.1",
-		"tslib": "^2.7.0",
+		"tslib": "^2.8.0",
 		"zone.js": "~0.15.0"
 	},
 	"devDependencies": {
-		"@angular/build": "^18.2.8",
-		"@angular/cli": "^18.2.8",
+		"@angular/build": "^18.2.9",
+		"@angular/cli": "^18.2.9",
 		"@angular/compiler-cli": "^18.2.8",
 		"prettier": "^3.3.3",
 		"typescript": "~5.4.5"
