@@ -228,24 +228,24 @@
 							name="discord.js - Imagine a bot"
 							icon="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/discordjs.png"
 							url="https://discord.gg/djs"
-							online="16417"
-							members="87147"
+							online={16417}
+							members={87147}
 							verified
 						></discord-invite>
 						<discord-invite
 							name="The Coding Den"
 							icon="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/tcd.png"
 							url="https://discord.gg/code"
-							online="18456"
-							members="73548"
+							online={18456}
+							members={73548}
 							partnered
 						></discord-invite>
 						<discord-invite
 							name="Skyra Lounge"
 							url="https://join.skyra.pw"
 							icon="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/skyralounge.gif"
-							online="176"
-							members="738"
+							online={176}
+							members={738}
 						></discord-invite>
 					</discord-attachments>
 				</discord-message>
@@ -257,10 +257,10 @@
 					<discord-image-attachment
 						slot="attachments"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
-						height="100"
-						width="100"
+						height={100}
+						width={100}
 						alt="lit-logo"
-					/>
+					></discord-image-attachment>
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Image Attachments with custom image components (you can see this in the code only)</h3>
@@ -270,8 +270,8 @@
 					<discord-image-attachment slot="attachments" custom-image-element>
 						<img
 							src="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/lit.png"
-							height="100"
-							width="100"
+							height={100}
+							width={100}
 							alt="lit-logo"
 						/>
 					</discord-image-attachment>
@@ -284,10 +284,10 @@
 					<discord-image-attachment
 						slot="attachments"
 						url="https://raw.githubusercontent.com/skyra-project/discord-components-implementations/main/shared/public/dragonite.png"
-						height="512"
-						width="512"
+						height={512}
+						width={512}
 						alt="dragonite"
-					/>
+					></discord-image-attachment>
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">File Attachments</h3>
@@ -301,7 +301,7 @@
 						href="https://favna.s-ul.eu/pZqminUa.pk9"
 						target="_blank"
 						type="application/octet-stream"
-					/>
+					></discord-file-attachment>
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Audio attachments</h3>
@@ -314,7 +314,7 @@
 						name="01 Baldurs Gate 3 OST - Main Theme Part I"
 						bytes="6.38"
 						bytes-unit="MB"
-					/>
+					></discord-audio-attachment>
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Video attachments</h3>
@@ -325,7 +325,7 @@
 						slot="attachments"
 						href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
 						poster="https://favna.s-ul.eu/On2pqpAq.png"
-					/>
+					></discord-video-attachment>
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">System Messages</h3>
@@ -611,7 +611,7 @@
 			<h3 class="title">A tenor-gif in video format</h3>
 			<discord-messages>
 				<discord-message profile="maximillian">
-					<discord-tenor-video slot="attachments" url="https://c.tenor.com/oTeBa4EVepMAAAPo/business-cat-working.mp4" />
+					<discord-tenor-video slot="attachments" url="https://c.tenor.com/oTeBa4EVepMAAAPo/business-cat-working.mp4"></discord-tenor-video>
 				</discord-message>
 			</discord-messages>
 			<h3 class="title">Inline fields</h3>
