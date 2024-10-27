@@ -11,13 +11,13 @@
 	},
 	"dependencies": {
 		"@skyra/discord-components-react": "^4.0.0-alpha.34",
-		"next": "14.2.15",
+		"next": "14.2.16",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1"
 	},
 	"devDependencies": {
-		"@types/node": "^20.16.13",
-		"@types/react": "^18.3.11",
+		"@types/node": "^20.17.1",
+		"@types/react": "^18.3.12",
 		"@types/react-dom": "^18.3.1",
 		"prettier": "^3.3.3",
 		"typescript": "^5.5.3"
