@@ -16,7 +16,7 @@
 		"react-dom": "19.0.0-rc-fb9a90fa48-20240614"
 	},
 	"devDependencies": {
-		"@types/node": "^20.17.6",
+		"@types/node": "^22.8.7",
 		"@types/react": "npm:types-react@19.0.0-rc.1",
 		"@types/react-dom": "npm:types-react-dom@19.0.0",
 		"prettier": "^3.3.3",
