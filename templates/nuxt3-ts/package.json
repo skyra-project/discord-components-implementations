@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"@nuxt/image": "^1.8.1",
-		"@skyra/discord-components-core": "^4.0.0-alpha.35",
+		"@skyra/discord-components-core": "^4.0.0-alpha.36",
 		"nuxt": "^3.13.2",
 		"vue": "^3.5.12",
 		"vue-router": "^4.4.5"

@@ -9,7 +9,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@skyra/discord-components-react": "^4.0.0-alpha.35",
+		"@skyra/discord-components-react": "^4.0.0-alpha.36",
 		"preact": "^10.24.3",
 		"react": "npm:@preact/compat@latest",
 		"react-dom": "npm:@preact/compat@latest"
