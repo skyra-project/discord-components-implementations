@@ -14,8 +14,8 @@
 		"@astrojs/check": "^0.9.4",
 		"@astrojs/lit": "^4.3.0",
 		"@astrojs/react": "^3.6.3",
-		"@skyra/discord-components-core": "^4.0.0-alpha.36",
-		"@skyra/discord-components-react": "^4.0.0-alpha.36",
+		"@skyra/discord-components-core": "^4.0.0-alpha.37",
+		"@skyra/discord-components-react": "^4.0.0-alpha.37",
 		"@webcomponents/template-shadowroot": "^0.2.1",
 		"astro": "^4.11.6",
 		"lit": "^3.2.1",
@@ -24,6 +24,6 @@
 		"typescript": "^5.6.3"
 	},
 	"devDependencies": {
-		"prettier": "^3.4.1"
+		"prettier": "^3.4.2"
 	}
 }
