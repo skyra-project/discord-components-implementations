@@ -575,21 +575,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/lit@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "@astrojs/lit@npm:4.3.0"
-  dependencies:
-    "@lit-labs/ssr": "npm:^3.2.2"
-    "@lit-labs/ssr-client": "npm:^1.1.7"
-    "@lit-labs/ssr-dom-shim": "npm:^1.2.0"
-    parse5: "npm:^7.1.2"
-  peerDependencies:
-    "@webcomponents/template-shadowroot": ^0.2.1
-    lit: ^3.1.0
-  checksum: 10c0/07241b0abad010ba7366f7788dcccdb11a4bb606c1daa9774a4712a1cca552f4a67cda65e2d037ce2ce3012d1de1a81ad9dea360dcdd4c6c129ccecd69f08e39
-  languageName: node
-  linkType: hard
-
 "@astrojs/markdown-remark@npm:6.0.1":
   version: 6.0.1
   resolution: "@astrojs/markdown-remark@npm:6.0.1"
@@ -2020,16 +2005,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@builder.io/qwik@npm:1.11.0":
-  version: 1.11.0
-  resolution: "@builder.io/qwik@npm:1.11.0"
+"@builder.io/qwik@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@builder.io/qwik@npm:1.5.2"
   dependencies:
-    csstype: "npm:^3.1"
+    csstype: "npm:^3.1.3"
+    vite: "npm:^5.1.6"
   peerDependencies:
-    vite: ^5
+    undici: "*"
   bin:
     qwik: qwik-cli.cjs
-  checksum: 10c0/d2ef46ce644f15cf93f9be5b4cfc26aac58938567865db9220894803515c4a0bef6b8e19a1d47e5b0d5941cae76bc74dd02fed0af13911b423127a71a36eda68
+  checksum: 10c0/9816d68bcb859d198d021ce473fbc1435c8674eebac89e8baad3035f1404c01974366ef977e5d386067405f35f7d5fa6cf194a186e4debfa1ac9ad0acb749d27
   languageName: node
   linkType: hard
 
@@ -4061,40 +4047,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lit-labs/ssr-client@npm:^1.1.7":
-  version: 1.1.7
-  resolution: "@lit-labs/ssr-client@npm:1.1.7"
-  dependencies:
-    "@lit/reactive-element": "npm:^2.0.4"
-    lit: "npm:^3.1.2"
-    lit-html: "npm:^3.1.2"
-  checksum: 10c0/0bef5b1040f01c5f77999c6641f26d33656972a523df5b8389dd901056af2db6e3f4e4377bee446ff97829ff1c268949a0d78522fe4f8c9ef8594d08fa66fed0
-  languageName: node
-  linkType: hard
-
 "@lit-labs/ssr-dom-shim@npm:^1.2.0":
   version: 1.2.0
   resolution: "@lit-labs/ssr-dom-shim@npm:1.2.0"
   checksum: 10c0/016168cf6901ab343462c13fb168dda6d549f8b42680aa394e6b7cd0af7cce51271e00dbfa5bbbe388912bf89cbb8f941a21cc3ec9bf95d6a84b6241aa9e5a72
-  languageName: node
-  linkType: hard
-
-"@lit-labs/ssr@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "@lit-labs/ssr@npm:3.2.2"
-  dependencies:
-    "@lit-labs/ssr-client": "npm:^1.1.7"
-    "@lit-labs/ssr-dom-shim": "npm:^1.2.0"
-    "@lit/reactive-element": "npm:^2.0.4"
-    "@parse5/tools": "npm:^0.3.0"
-    "@types/node": "npm:^16.0.0"
-    enhanced-resolve: "npm:^5.10.0"
-    lit: "npm:^3.1.2"
-    lit-element: "npm:^4.0.4"
-    lit-html: "npm:^3.1.2"
-    node-fetch: "npm:^3.2.8"
-    parse5: "npm:^7.1.1"
-  checksum: 10c0/44e5681314f9515bbedd7fae6b693786123a896890c0c8ada97c4e66ec62ee92fb4e04f81169af0207eabc7dcb05b7c66ae89c57c86f21db6f0e02f490039dc1
   languageName: node
   linkType: hard
 
@@ -5062,15 +5018,6 @@ __metadata:
     "@parcel/watcher-win32-x64":
       optional: true
   checksum: 10c0/33b7112094b9eb46c234d824953967435b628d3d93a0553255e9910829b84cab3da870153c3a870c31db186dc58f3b2db81382fcaee3451438aeec4d786a6211
-  languageName: node
-  linkType: hard
-
-"@parse5/tools@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@parse5/tools@npm:0.3.0"
-  dependencies:
-    parse5: "npm:^7.0.0"
-  checksum: 10c0/2bee032a2567e15cf8d403db386644f430c6ee3ea8300f7f386502ea6d0e74adbc0f60c6a825fd0f657027e2b0f20e52ad973ad875892b4dad0e50f1332c9179
   languageName: node
   linkType: hard
 
@@ -6400,13 +6347,6 @@ __metadata:
   dependencies:
     undici-types: "npm:~6.20.0"
   checksum: 10c0/2c7b71a040f1ef5320938eca8ebc946e6905caa9bbf3d5665d9b3774a8d15ea9fab1582b849a6d28c7fc80756a62c5666bc66b69f42f4d5dafd1ccb193cdb4ac
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^16.0.0":
-  version: 16.18.97
-  resolution: "@types/node@npm:16.18.97"
-  checksum: 10c0/5c2898309e5c14576ec7e5c727de528d05d48feb588f975148dd292268b8f7f539a662bea152dbeb9c3ec83c3bbe4a6c066e867b52712bde36bd241e39e2f86e
   languageName: node
   linkType: hard
 
@@ -7823,13 +7763,11 @@ __metadata:
   resolution: "astro@workspace:templates/astro"
   dependencies:
     "@astrojs/check": "npm:^0.9.4"
-    "@astrojs/lit": "npm:^4.3.0"
     "@astrojs/react": "npm:^4.1.0"
     "@skyra/discord-components-core": "npm:^4.0.0-alpha.37"
     "@skyra/discord-components-react": "npm:^4.0.0-alpha.37"
     "@webcomponents/template-shadowroot": "npm:^0.2.1"
     astro: "npm:^5.0.5"
-    lit: "npm:^3.2.1"
     prettier: "npm:^3.4.2"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
@@ -9594,17 +9532,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.0.2, csstype@npm:^3.1, csstype@npm:^3.1.0, csstype@npm:^3.1.3":
+"csstype@npm:^3.0.2, csstype@npm:^3.1.0, csstype@npm:^3.1.3":
   version: 3.1.3
   resolution: "csstype@npm:3.1.3"
   checksum: 10c0/80c089d6f7e0c5b2bd83cf0539ab41474198579584fa10d86d0cafe0642202343cbc119e076a0b1aece191989477081415d66c9fefbf3c957fc2fc4b7009f248
-  languageName: node
-  linkType: hard
-
-"data-uri-to-buffer@npm:^4.0.0":
-  version: 4.0.1
-  resolution: "data-uri-to-buffer@npm:4.0.1"
-  checksum: 10c0/20a6b93107597530d71d4cb285acee17f66bcdfc03fd81040921a81252f19db27588d87fc8fc69e1950c55cfb0bf8ae40d0e5e21d907230813eb5d5a7f9eb45b
   languageName: node
   linkType: hard
 
@@ -10212,7 +10143,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.10.0, enhanced-resolve@npm:^5.14.1, enhanced-resolve@npm:^5.17.1":
+"enhanced-resolve@npm:^5.14.1, enhanced-resolve@npm:^5.17.1":
   version: 5.17.1
   resolution: "enhanced-resolve@npm:5.17.1"
   dependencies:
@@ -10941,16 +10872,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fetch-blob@npm:^3.1.2, fetch-blob@npm:^3.1.4":
-  version: 3.2.0
-  resolution: "fetch-blob@npm:3.2.0"
-  dependencies:
-    node-domexception: "npm:^1.0.0"
-    web-streams-polyfill: "npm:^3.0.3"
-  checksum: 10c0/60054bf47bfa10fb0ba6cb7742acec2f37c1f56344f79a70bb8b1c48d77675927c720ff3191fa546410a0442c998d27ab05e9144c32d530d8a52fbe68f843b69
-  languageName: node
-  linkType: hard
-
 "figures@npm:^3.2.0":
   version: 3.2.0
   resolution: "figures@npm:3.2.0"
@@ -11161,15 +11082,6 @@ __metadata:
   version: 0.2.2
   resolution: "format@npm:0.2.2"
   checksum: 10c0/6032ba747541a43abf3e37b402b2f72ee08ebcb58bf84d816443dd228959837f1cddf1e8775b29fa27ff133f4bd146d041bfca5f9cf27f048edf3d493cf8fee6
-  languageName: node
-  linkType: hard
-
-"formdata-polyfill@npm:^4.0.10":
-  version: 4.0.10
-  resolution: "formdata-polyfill@npm:4.0.10"
-  dependencies:
-    fetch-blob: "npm:^3.1.2"
-  checksum: 10c0/5392ec484f9ce0d5e0d52fb5a78e7486637d516179b0eb84d81389d7eccf9ca2f663079da56f761355c0a65792810e3b345dc24db9a8bbbcf24ef3c8c88570c6
   languageName: node
   linkType: hard
 
@@ -13381,7 +13293,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lit-element@npm:^4.0.4, lit-element@npm:^4.1.0":
+"lit-element@npm:^4.1.0":
   version: 4.1.0
   resolution: "lit-element@npm:4.1.0"
   dependencies:
@@ -13392,7 +13304,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lit-html@npm:^3.1.2, lit-html@npm:^3.2.0":
+"lit-html@npm:^3.2.0":
   version: 3.2.0
   resolution: "lit-html@npm:3.2.0"
   dependencies:
@@ -13401,7 +13313,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lit@npm:^3.1.2, lit@npm:^3.2.1":
+"lit@npm:^3.2.1":
   version: 3.2.1
   resolution: "lit@npm:3.2.1"
   dependencies:
@@ -15329,13 +15241,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-domexception@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "node-domexception@npm:1.0.0"
-  checksum: 10c0/5e5d63cda29856402df9472335af4bb13875e1927ad3be861dc5ebde38917aecbf9ae337923777af52a48c426b70148815e890a5d72760f1b4d758cc671b1a2b
-  languageName: node
-  linkType: hard
-
 "node-emoji@npm:^2.1.0":
   version: 2.1.3
   resolution: "node-emoji@npm:2.1.3"
@@ -15366,17 +15271,6 @@ __metadata:
     encoding:
       optional: true
   checksum: 10c0/b55786b6028208e6fbe594ccccc213cab67a72899c9234eb59dba51062a299ea853210fcf526998eaa2867b0963ad72338824450905679ff0fa304b8c5093ae8
-  languageName: node
-  linkType: hard
-
-"node-fetch@npm:^3.2.8":
-  version: 3.3.2
-  resolution: "node-fetch@npm:3.3.2"
-  dependencies:
-    data-uri-to-buffer: "npm:^4.0.0"
-    fetch-blob: "npm:^3.1.4"
-    formdata-polyfill: "npm:^4.0.10"
-  checksum: 10c0/f3d5e56190562221398c9f5750198b34cf6113aa304e34ee97c94fd300ec578b25b2c2906edba922050fce983338fde0d5d34fcb0fc3336ade5bd0e429ad7538
   languageName: node
   linkType: hard
 
@@ -16290,7 +16184,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parse5@npm:^7.0.0, parse5@npm:^7.1.1, parse5@npm:^7.1.2":
+"parse5@npm:^7.0.0":
   version: 7.1.2
   resolution: "parse5@npm:7.1.2"
   dependencies:
@@ -17979,7 +17873,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "qwik-vite-ts@workspace:templates/qwik-vite-ts"
   dependencies:
-    "@builder.io/qwik": "npm:1.11.0"
+    "@builder.io/qwik": "npm:1.5.2"
     "@skyra/discord-components-core": "npm:^4.0.0-alpha.37"
     prettier: "npm:^3.4.2"
     typescript: "npm:~5.6.3"
@@ -21611,7 +21505,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:5.4.11, vite@npm:^5.0.0, vite@npm:^5.4.11":
+"vite@npm:5.4.11, vite@npm:^5.0.0, vite@npm:^5.1.6, vite@npm:^5.4.11":
   version: 5.4.11
   resolution: "vite@npm:5.4.11"
   dependencies:
@@ -22091,13 +21985,6 @@ __metadata:
   version: 2.0.1
   resolution: "web-namespaces@npm:2.0.1"
   checksum: 10c0/df245f466ad83bd5cd80bfffc1674c7f64b7b84d1de0e4d2c0934fb0782e0a599164e7197a4bce310ee3342fd61817b8047ff04f076a1ce12dd470584142a4bd
-  languageName: node
-  linkType: hard
-
-"web-streams-polyfill@npm:^3.0.3":
-  version: 3.3.3
-  resolution: "web-streams-polyfill@npm:3.3.3"
-  checksum: 10c0/64e855c47f6c8330b5436147db1c75cb7e7474d924166800e8e2aab5eb6c76aac4981a84261dd2982b3e754490900b99791c80ae1407a9fa0dcff74f82ea3a7f
   languageName: node
   linkType: hard
 
