@@ -19,6 +19,6 @@
 		"@vitejs/plugin-react": "^4.3.4",
 		"prettier": "^3.4.2",
 		"typescript": "~5.6.3",
-		"vite": "^6.0.5"
+		"vite": "^6.0.6"
 	}
 }
