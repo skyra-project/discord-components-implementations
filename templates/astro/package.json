@@ -13,8 +13,8 @@
 	"dependencies": {
 		"@astrojs/check": "^0.9.4",
 		"@astrojs/react": "^4.1.2",
-		"@skyra/discord-components-core": "^4.0.0-alpha.37",
-		"@skyra/discord-components-react": "^4.0.0-alpha.37",
+		"@skyra/discord-components-core": "^4.0.0-alpha.38",
+		"@skyra/discord-components-react": "^4.0.0-alpha.38",
 		"@webcomponents/template-shadowroot": "^0.2.1",
 		"astro": "^5.0.5",
 		"react": "^19.0.0",
