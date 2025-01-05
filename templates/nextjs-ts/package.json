@@ -10,13 +10,13 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@skyra/discord-components-react": "^4.0.0-alpha.37",
+		"@skyra/discord-components-react": "^4.0.0-alpha.38",
 		"next": "15.1.3",
 		"react": "19.0.0",
 		"react-dom": "19.0.0"
 	},
 	"devDependencies": {
-		"@types/node": "^22.10.2",
+		"@types/node": "^22.10.5",
 		"@types/react": "^19.0.2",
 		"@types/react-dom": "^19.0.2",
 		"prettier": "^3.4.2",
