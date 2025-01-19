@@ -13,7 +13,7 @@
 		"@skyra/discord-components-core": "^4.0.0-alpha.38"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/adapter-auto": "^4.0.0",
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"prettier": "^3.4.2",
