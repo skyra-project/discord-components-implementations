@@ -13,7 +13,7 @@
 		"solid-js": "^1.9.4"
 	},
 	"devDependencies": {
-		"prettier": "^3.4.2",
+		"prettier": "^3.5.1",
 		"typescript": "~5.6.3",
 		"vite": "^6.1.0",
 		"vite-plugin-solid": "^2.11.1"
