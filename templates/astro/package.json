@@ -12,13 +12,13 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.4",
-		"@astrojs/react": "^4.2.1",
+		"@astrojs/react": "^4.2.2",
 		"@skyra/discord-components-core": "^4.0.0-alpha.38",
 		"@skyra/discord-components-react": "^4.0.0-alpha.38",
 		"@webcomponents/template-shadowroot": "^0.2.1",
 		"astro": "^5.0.5",
-		"react": "^19.0.0",
-		"react-dom": "^19.0.0",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
 		"typescript": "^5.7.2"
 	},
 	"devDependencies": {
