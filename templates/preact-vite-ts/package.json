@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@skyra/discord-components-react": "^4.0.0-alpha.38",
-		"preact": "^10.26.4",
+		"preact": "^10.26.5",
 		"react": "npm:@preact/compat@latest",
 		"react-dom": "npm:@preact/compat@latest"
 	},
