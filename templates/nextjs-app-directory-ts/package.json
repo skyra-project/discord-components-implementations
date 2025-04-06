@@ -16,14 +16,14 @@
 		"react-dom": "19.1.0"
 	},
 	"devDependencies": {
-		"@types/node": "^22.13.14",
-		"@types/react": "^19.0.12",
-		"@types/react-dom": "^19.0.4",
+		"@types/node": "^22.14.0",
+		"@types/react": "^19.1.0",
+		"@types/react-dom": "^19.1.1",
 		"prettier": "^3.5.3",
 		"typescript": "^5.7.2"
 	},
 	"resolutions": {
-		"@types/react": "^19.0.12",
-		"@types/react-dom": "^19.0.4"
+		"@types/react": "^19.1.0",
+		"@types/react-dom": "^19.1.1"
 	}
 }
