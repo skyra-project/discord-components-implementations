@@ -12,9 +12,9 @@
 	"dependencies": {
 		"@nuxt/image": "^1.10.0",
 		"@skyra/discord-components-core": "^4.0.0-alpha.38",
-		"nuxt": "^3.16.2",
+		"nuxt": "^3.17.2",
 		"vue": "^3.5.13",
-		"vue-router": "^4.5.0"
+		"vue-router": "^4.5.1"
 	},
 	"devDependencies": {
 		"prettier": "^3.5.3"
