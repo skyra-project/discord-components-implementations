@@ -10,13 +10,13 @@
 	},
 	"dependencies": {
 		"@skyra/discord-components-react": "^4.0.0-alpha.38",
-		"preact": "^10.26.6",
+		"preact": "^10.26.7",
 		"react": "npm:@preact/compat@latest",
 		"react-dom": "npm:@preact/compat@latest"
 	},
 	"devDependencies": {
 		"@preact/preset-vite": "^2.10.1",
-		"@types/react": "^19.1.4",
+		"@types/react": "^19.1.5",
 		"@types/react-dom": "^19.1.5",
 		"typescript": "~5.6.3",
 		"vite": "^6.3.5"
