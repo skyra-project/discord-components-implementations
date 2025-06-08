@@ -7,7 +7,7 @@
 	"scripts": {
 		"prettier": "prettier --ignore-path .prettierignore"
 	},
-	"packageManager": "yarn@4.9.1",
+	"packageManager": "yarn@4.9.2",
 	"devDependencies": {
 		"@sapphire/prettier-config": "^2.0.0",
 		"lodash.merge": "^4.6.2",
