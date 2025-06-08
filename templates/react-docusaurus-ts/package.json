@@ -16,8 +16,8 @@
 		"typecheck": "tsc"
 	},
 	"dependencies": {
-		"@docusaurus/core": "3.8.0",
-		"@docusaurus/preset-classic": "3.8.0",
+		"@docusaurus/core": "3.8.1",
+		"@docusaurus/preset-classic": "3.8.1",
 		"@mdx-js/react": "^3.1.0",
 		"@skyra/discord-components-react": "^4.0.0-alpha.38",
 		"clsx": "^2.1.1",
@@ -26,9 +26,9 @@
 		"react-dom": "^19.1.0"
 	},
 	"devDependencies": {
-		"@docusaurus/module-type-aliases": "3.8.0",
-		"@docusaurus/tsconfig": "3.8.0",
-		"@docusaurus/types": "3.8.0",
+		"@docusaurus/module-type-aliases": "3.8.1",
+		"@docusaurus/tsconfig": "3.8.1",
+		"@docusaurus/types": "3.8.1",
 		"prettier": "^3.5.3",
 		"typescript": "^5.7.2"
 	},
