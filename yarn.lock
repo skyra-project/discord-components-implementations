@@ -7364,6 +7364,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vitejs/plugin-vue@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@vitejs/plugin-vue@npm:6.0.0"
+  dependencies:
+    "@rolldown/pluginutils": "npm:1.0.0-beta.19"
+  peerDependencies:
+    vite: ^5.0.0 || ^6.0.0 || ^7.0.0
+    vue: ^3.2.25
+  checksum: 10c0/45715a68f92a6d8d173c1af37304c1b44a5386288a1ff43cb0782cadbfd4569b8c343facfeb69d4d51d4c09294a20f99a57581a9959e97521aa123e9d76b729c
+  languageName: node
+  linkType: hard
+
 "@volar/kit@npm:~2.4.7":
   version: 2.4.14
   resolution: "@volar/kit@npm:2.4.14"
@@ -23199,7 +23211,7 @@ __metadata:
   resolution: "vue-vite-ts@workspace:templates/vue-vite-ts"
   dependencies:
     "@skyra/discord-components-core": "npm:^4.0.2"
-    "@vitejs/plugin-vue": "npm:^5.2.4"
+    "@vitejs/plugin-vue": "npm:^6.0.0"
     prettier: "npm:^3.6.2"
     typescript: "npm:~5.8.3"
     vite: "npm:^7.0.0"
