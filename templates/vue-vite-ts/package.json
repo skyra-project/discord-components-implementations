@@ -10,13 +10,13 @@
 	},
 	"dependencies": {
 		"@skyra/discord-components-core": "^4.0.2",
-		"vue": "^3.5.17"
+		"vue": "^3.5.18"
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^6.0.0",
 		"prettier": "^3.6.2",
 		"typescript": "~5.8.3",
-		"vite": "^7.0.5",
-		"vue-tsc": "^3.0.3"
+		"vite": "^7.0.6",
+		"vue-tsc": "^3.0.4"
 	}
 }
