@@ -22231,9 +22231,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-check@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "svelte-check@npm:4.3.0"
+"svelte-check@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "svelte-check@npm:4.3.1"
   dependencies:
     "@jridgewell/trace-mapping": "npm:^0.3.25"
     chokidar: "npm:^4.0.1"
@@ -22245,7 +22245,7 @@ __metadata:
     typescript: ">=5.0.0"
   bin:
     svelte-check: bin/svelte-check
-  checksum: 10c0/1e422eb673f88692c0c034db443148fa150c87fc00d230ba20ac905c7daa66e4d5a744d5d792914b46889b629c1b25d4fcebc445a6ad836b24121597258809b1
+  checksum: 10c0/e3aa6b8be4d46054699740e4625acf846e6b4a085f63c5a1621b3429367ecfd9e1f6fae36b6169cd375826b22c5a70c77c83c998ac9ef2fd2435b4bebf932788
   languageName: node
   linkType: hard
 
@@ -22258,7 +22258,7 @@ __metadata:
     "@tsconfig/svelte": "npm:^5.0.4"
     prettier: "npm:^3.6.2"
     svelte: "npm:^5.37.3"
-    svelte-check: "npm:^4.3.0"
+    svelte-check: "npm:^4.3.1"
     tslib: "npm:^2.8.1"
     typescript: "npm:~5.8.3"
     vite: "npm:^7.0.6"
@@ -22297,7 +22297,7 @@ __metadata:
     "@sveltejs/vite-plugin-svelte": "npm:^6.1.0"
     prettier: "npm:^3.6.2"
     svelte: "npm:^5.37.3"
-    svelte-check: "npm:^4.3.0"
+    svelte-check: "npm:^4.3.1"
     tslib: "npm:^2.8.1"
     typescript: "npm:~5.8.3"
     vite: "npm:^7.0.6"
