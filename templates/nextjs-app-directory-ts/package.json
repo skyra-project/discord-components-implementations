@@ -11,19 +11,19 @@
 	},
 	"dependencies": {
 		"@skyra/discord-components-react": "^4.0.2",
-		"next": "15.4.6",
+		"next": "15.5.0",
 		"react": "19.1.1",
 		"react-dom": "19.1.1"
 	},
 	"devDependencies": {
 		"@types/node": "^24.3.0",
-		"@types/react": "^19.1.10",
+		"@types/react": "^19.1.11",
 		"@types/react-dom": "^19.1.7",
 		"prettier": "^3.6.2",
 		"typescript": "^5.8.3"
 	},
 	"resolutions": {
-		"@types/react": "^19.1.10",
+		"@types/react": "^19.1.11",
 		"@types/react-dom": "^19.1.7"
 	}
 }
