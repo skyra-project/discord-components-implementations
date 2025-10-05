@@ -12,18 +12,18 @@
 	"dependencies": {
 		"@skyra/discord-components-react": "^4.0.2",
 		"next": "15.5.4",
-		"react": "19.1.1",
-		"react-dom": "19.1.1"
+		"react": "19.2.0",
+		"react-dom": "19.2.0"
 	},
 	"devDependencies": {
-		"@types/node": "^24.5.2",
-		"@types/react": "^19.1.14",
-		"@types/react-dom": "^19.1.9",
+		"@types/node": "^24.6.2",
+		"@types/react": "^19.2.0",
+		"@types/react-dom": "^19.2.0",
 		"prettier": "^3.6.2",
 		"typescript": "^5.8.3"
 	},
 	"resolutions": {
-		"@types/react": "^19.1.14",
-		"@types/react-dom": "^19.1.9"
+		"@types/react": "^19.2.0",
+		"@types/react-dom": "^19.2.0"
 	}
 }
