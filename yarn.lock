@@ -7019,12 +7019,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-auto@npm:^6.1.1":
-  version: 6.1.1
-  resolution: "@sveltejs/adapter-auto@npm:6.1.1"
+"@sveltejs/adapter-auto@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "@sveltejs/adapter-auto@npm:7.0.0"
   peerDependencies:
     "@sveltejs/kit": ^2.0.0
-  checksum: 10c0/acd99c6d322cabae65ed227f02e736d49685e129a8f7500cfca7dd0072dba575519f1a42e6ff0718b927e3e8d43281e73d2a57a72b7d125eaea7568d1076c4a2
+  checksum: 10c0/928393d4e366a0094bec5e09c70e44c3c7b5f17687f1735f71eb305e1ae640c64cd9f7d8f80d8b31dcaa235ae2b07e0f021a9204b5cec895d5bd8035064c9195
   languageName: node
   linkType: hard
 
@@ -21787,7 +21787,7 @@ __metadata:
   resolution: "sveltekit-ts@workspace:templates/sveltekit-ts"
   dependencies:
     "@skyra/discord-components-core": "npm:^4.0.2"
-    "@sveltejs/adapter-auto": "npm:^6.1.1"
+    "@sveltejs/adapter-auto": "npm:^7.0.0"
     "@sveltejs/kit": "npm:^2.47.1"
     "@sveltejs/vite-plugin-svelte": "npm:^6.2.1"
     prettier: "npm:^3.6.2"
