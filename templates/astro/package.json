@@ -11,7 +11,7 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.9.4",
+		"@astrojs/check": "^0.9.5",
 		"@astrojs/react": "^4.4.0",
 		"@skyra/discord-components-core": "^4.0.2",
 		"@skyra/discord-components-react": "^4.0.2",
