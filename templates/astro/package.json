@@ -11,17 +11,17 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.9.5",
+		"@astrojs/check": "^0.9.9",
 		"@astrojs/react": "^4.4.2",
 		"@skyra/discord-components-core": "^4.0.2",
 		"@skyra/discord-components-react": "^4.0.2",
 		"@webcomponents/template-shadowroot": "^0.2.1",
 		"astro": "^5.9.4",
-		"react": "^19.2.0",
-		"react-dom": "^19.2.0",
+		"react": "^19.2.6",
+		"react-dom": "^19.2.6",
 		"typescript": "^5.8.3"
 	},
 	"devDependencies": {
-		"prettier": "^3.6.2"
+		"prettier": "^3.8.3"
 	}
 }
